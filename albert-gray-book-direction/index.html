@@ -33,13 +33,15 @@
 
   .page {
     width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 80px;
+    align-items: center;
     position: relative;
+  }
+  .page-inner {
+    width: 100%;
+    max-width: 1100px;
+    padding: 80px;
   }
 
 
@@ -384,8 +386,40 @@
   }
 
   /* ── RESPONSIVE ── */
+  /* ── OPTION COLOR THEMES ── */
+  .option-purple .worth-box { background: rgba(35,33,175,0.08); }
+  .option-purple .worth-label { color: var(--purple); }
+  .option-purple .detail-label { color: var(--purple); }
+  .option-purple .detail-row ul li::before { color: var(--purple); }
+  .option-purple .exists-box { border-left-color: var(--purple); background: rgba(35,33,175,0.06); color: var(--purple); }
+  .option-purple .callout-box { border-left-color: var(--purple); background: rgba(35,33,175,0.06); }
+  .option-purple .callout-label { color: var(--purple); }
+  .option-purple .sr-col.strengths h4 { color: var(--purple); }
+  .option-purple .sr-col.strengths ul li::before { color: var(--purple); }
+
+  .option-gold .worth-box { background: rgba(201,143,35,0.08); }
+  .option-gold .worth-label { color: var(--gold); }
+  .option-gold .detail-label { color: var(--gold); }
+  .option-gold .detail-row ul li::before { color: var(--gold); }
+  .option-gold .exists-box { border-left-color: var(--gold); background: rgba(201,143,35,0.06); color: var(--gold); }
+  .option-gold .callout-box { border-left-color: var(--gold); background: rgba(201,143,35,0.06); }
+  .option-gold .callout-label { color: var(--gold); }
+  .option-gold .caution-box { border-left-color: var(--gold); background: rgba(201,143,35,0.06); }
+  .option-gold .sr-col.strengths h4 { color: var(--gold); }
+  .option-gold .sr-col.strengths ul li::before { color: var(--gold); }
+
+  .option-green .worth-box { background: rgba(74,103,65,0.08); }
+  .option-green .worth-label { color: #4A6741; }
+  .option-green .detail-label { color: #4A6741; }
+  .option-green .detail-row ul li::before { color: #4A6741; }
+  .option-green .exists-box { border-left-color: #4A6741; background: rgba(74,103,65,0.06); color: #4A6741; }
+  .option-green .callout-box { border-left-color: #4A6741; background: rgba(74,103,65,0.06); }
+  .option-green .callout-label { color: #4A6741; }
+  .option-green .sr-col.strengths h4 { color: #4A6741; }
+  .option-green .sr-col.strengths ul li::before { color: #4A6741; }
+
   @media (max-width: 768px) {
-    .page { padding: 32px 16px; }
+    .page-inner { padding: 32px 16px; }
     .cover-content { padding: 48px 16px; }
     .sr-row { flex-direction: column; gap: 20px; }
   }
@@ -407,13 +441,13 @@
 
 <!-- ═══════════════ THE QUESTION ═══════════════ -->
 <div class="page">
-
+<div class="page-inner">
   <div class="section-heading">The Key Question</div>
   <div class="section-subtitle">Before we choose the structure, we must answer this first</div>
 
   <div class="content-block">
     <p>Albert, thank you for your email exploring the Gospel of John framework. That&rsquo;s extremely helpful to continue understanding your vision for this project!</p>
-    <p>As we continue building the plan, I want to step back and ask a critical question that determines everything else:</p>
+    <p>My goal is to help you create a book that: 1) Lifts up the name of Jesus 2) Captures the message God has prepared you to share, and 3) People want to read. As we continue building the plan, I want to put ourselves in the reader&rsquo;s shoes and ask a critical question:</p>
   </div>
 
   <div class="callout-box" style="margin-top: 0;">
@@ -422,10 +456,10 @@
   </div>
 
   <div class="content-block">
-    <p>This is the question every reader is asking. The answer has to be specific. It has to name who the book is for and what it gives them that they cannot easily get somewhere else.</p>
+    <p>This is the question every reader is asking. If they are going to read your book, the answer has to be specific. It has to name who the book is for and what it gives them that they cannot easily get somewhere else.</p>
     <p>What&rsquo;s the answer?</p>
-    <p>It must be something God has uniquely equipped you to share, or the answer will be unconvincing to readers. For example, God&rsquo;s faithfulness is beautiful, but it&rsquo;s also so broad almost every Christian book ever written falls under that category.</p>
-    <p>What experiences, opportunities, lessons, and talents has God uniquely entrusted to you to share?</p>
+    <p>Specificity is found in what God has uniquely equipped you to share, not just a generalization of good ideas. For example, God&rsquo;s faithfulness is beautiful, but it&rsquo;s also so broad almost every Christian book ever written falls under that category.</p>
+    <p>My encouragement is to think about: What experiences, opportunities, lessons, and talents God has uniquely entrusted to you?</p>
   </div>
 
   <div class="scripture" style="margin-top: 0;">
@@ -434,16 +468,16 @@
   </div>
 
   <div class="content-block">
-    <p>Habakkuk 2:2 tells exactly what we are doing. A leader struggling with a discouraged team could spend years searching scripture, testing ideas, and finding what works. Or, they could just read your book. We are making it plain so those who read it don&rsquo;t have to keep &ldquo;looking&rdquo;&mdash;instead, they can run with it where God has called them.</p>
+    <p>Habakkuk 2:2 tells exactly what we are doing. Take a leader struggling with a discouraged team for example. They could spend years searching scripture, testing ideas, and finding what works. Or, they could just read your book. We are making it plain so that those who read your book can get unstuck today and start running.</p>
     <p>That means being focused and specific.</p>
     <p>Below are three specific directions. Each one answers the question differently, for a different reader, with a different structure. All three honor your story and your faith. The difference is focus.</p>
   </div>
 </div>
+</div>
 
 <!-- ═══════════════ OPTION 1 ═══════════════ -->
-<div class="page">
-
-
+<div class="page option-purple" style="background: rgba(35,33,175,0.05);">
+<div class="page-inner">
   <div class="option-header">
     <div class="option-num" style="color: var(--purple);">Option 1</div>
     <div class="option-title" style="color: var(--dark);">Leading with Hope</div>
@@ -506,11 +540,11 @@
     This book exists to for high-level, strong-faith leaders who want to be faith-first in their leadership and revive hope in their team but are struggling to figure out how to do so effectively. Albert can help illuminate it.
   </div>
 </div>
+</div>
 
 <!-- ═══════════════ OPTION 2 ═══════════════ -->
-<div class="page">
-
-
+<div class="page option-gold" style="background: rgba(201,143,35,0.05);">
+<div class="page-inner">
   <div class="option-header">
     <div class="option-num" style="color: var(--gold);">Option 2</div>
     <div class="option-title" style="color: var(--dark);">Living with Hope</div>
@@ -566,11 +600,11 @@
     This book exists to help tired and discouraged believers rediscover the hope of Christ.
   </div>
 </div>
+</div>
 
 <!-- ═══════════════ OPTION 3 ═══════════════ -->
-<div class="page">
-
-
+<div class="page option-green" style="background: rgba(74,103,65,0.05);">
+<div class="page-inner">
   <div class="option-header">
     <div class="option-num" style="color: #4A6741;">Option 3</div>
     <div class="option-title" style="color: var(--dark);">Becoming a Hope-Filled Leader</div>
@@ -629,10 +663,11 @@
     This book exists for leaders at all levels looking to grow personally in their foundation as much as to apply spiritual truths to their leadership practice.
   </div>
 </div>
+</div>
 
 <!-- ═══════════════ RECOMMENDATION & CLOSING ═══════════════ -->
 <div class="page">
-
+<div class="page-inner">
   <div class="section-heading">My Recommendation</div>
   <div class="gold-rule"></div>
 
@@ -647,6 +682,7 @@
   <div class="content-block" style="margin-top:28px;">
     <p>Looking forward to hearing your thoughts!<br><strong>&mdash; Holden</strong></p>
   </div>
+</div>
 </div>
 
 </body>
