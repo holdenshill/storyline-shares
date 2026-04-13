@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Choosing the Book Direction — Albert Gray Book Project</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+  @font-face {
+    font-family: 'Gin';
+    src: url("data:font/otf;base64,T1RUTwAOAIAAAwBgQ0ZGIHykDsUAAApwAAAmt0RTSUcAAAABAABGlAAAAAhHREVGAPsBfQAAMSgAAAAcR1BPUzmZQAQAADFEAAAPDEdTVUIEBgFeAABAUAAAAoxPUy8yZ9SKSgAAAVAAAABgY21hcHMxvFAAAAa8AAADkmdhc3AAAAAQAABC3AAAAAhoZWFkD2eG6gAAAOwAAAA2aGhlYQfBA/cAAAEkAAAAJGhtdHi7KyACAABC5AAAA7BtYXhwAOxQAAAAAUgAAAAGbmFtZVC2XTMAAAGwAAAFCnBvc3T/uAAyAAAKUAAAACAAAQAAAAEAg/FSkPhfDzz1AAMD6AAAAADOQDE4AAAAANv/EL//7P9dBiUEMwAAAAMAAgAAAAAAAAABAAAENP9dAAADwv/s/+sDngABAAAAAAAAAAAAAAAAAAAA7AAAUAAA7AAAAAMB4AGQAAUABAKKAlgAAABLAooCWAAAAV4AMgHIAAAAAAUAAAAAAAAAAAAAAwAAAAAAAAAAAAAAAFVLV04AQAAgImAC7v8GAAAENACjAAAAAQAAAAAC+AL4AAAAIAACAAAAGAEmAAEAAAAAAAAANwAAAAEAAAAAAAEAAwA3AAEAAAAAAAIABwA6AAEAAAAAAAMASwBBAAEAAAAAAAQAAwA3AAEAAAAAAAUAPACMAAEAAAAAAAYACwDIAAEAAAAAAAgAEQDTAAEAAAAAAAkADQDkAAEAAAAAAAsAGgDxAAEAAAAAAAwAEAELAAEAAAAAAA4AMQEbAAMAAQQJAAAAbgFMAAMAAQQJAAEABgG6AAMAAQQJAAIADgHAAAMAAQQJAAMAlgHOAAMAAQQJAAQABgG6AAMAAQQJAAUAeAJkAAMAAQQJAAYAFgLcAAMAAQQJAAgAIgLyAAMAAQQJAAkAGgMUAAMAAQQJAAsANAMuAAMAAQQJAAwAIANiAAMAAQQJAA4AYgOCQ29weXJpZ2h0IKkgMjAxMyBieSBNYXR0b3ggU2h1bGVyLiBBbGwgcmlnaHRzIHJlc2VydmVkLkdpblJlZ3VsYXIxLjAwMjtVS1dOO0dpbi1SZWd1bGFyOjxUa0QtMjUyODgtNWQyYTZkODZlMjQ5ZWYzNmNhYzhkMGJiYmYxM2E4YTZkMmViNDJiOT5WZXJzaW9uIDEuMDAyO1BTIDAwMS4wMDI7aG90Y29udiAxLjAuNzA7bWFrZW90Zi5saWIyLjUuNTgzMjlHaW4tUmVndWxhckhvbGQgRmFzdCBGb3VuZHJ5TWF0dG94IFNodWxlcmh0dHA6Ly9ob2xkZmFzdGZvdW5kcnkuY29taHR0cDovL21hdHRveC5jY2h0dHA6Ly90eXBla2l0LmNvbS9ldWxhcy8wMDAwMDAwMDAwMDAwMDAwNzczNWE2NDQAQwBvAHAAeQByAGkAZwBoAHQAIACpACAAMgAwADEAMwAgAGIAeQAgAE0AYQB0AHQAbwB4ACAAUwBoAHUAbABlAHIALgAgAEEAbABsACAAcgBpAGcAaAB0AHMAIAByAGUAcwBlAHIAdgBlAGQALgBHAGkAbgBSAGUAZwB1AGwAYQByADEALgAwADAAMgA7AFUASwBXAE4AOwBHAGkAbgAtAFIAZQBnAHUAbABhAHIAOgA8AFQAawBEAC0AMgA1ADIAOAA4AC0ANQBkADIAYQA2AGQAOAA2AGUAMgA0ADkAZQBmADMANgBjAGEAYwA4AGQAMABiAGIAYgBmADEAMwBhADgAYQA2AGQAMgBlAGIANAAyAGIAOQA+AFYAZQByAHMAaQBvAG4AIAAxAC4AMAAwADIAOwBQAFMAIAAwADAAMQAuADAAMAAyADsAaABvAHQAYwBvAG4AdgAgADEALgAwAC4ANwAwADsAbQBhAGsAZQBvAHQAZgAuAGwAaQBiADIALgA1AC4ANQA4ADMAMgA5AEcAaQBuAC0AUgBlAGcAdQBsAGEAcgBIAG8AbABkACAARgBhAHMAdAAgAEYAbwB1AG4AZAByAHkATQBhAHQAdABvAHgAIABTAGgAdQBsAGUAcgBoAHQAdABwADoALwAvAGgAbwBsAGQAZgBhAHMAdABmAG8AdQBuAGQAcgB5AC4AYwBvAG0AaAB0AHQAcAA6AC8ALwBtAGEAdAB0AG8AeAAuAGMAYwBoAHQAdABwADoALwAvAHQAeQBwAGUAawBpAHQALgBjAG8AbQAvAGUAdQBsAGEAcwAvADAAMAAwADAAMAAwADAAMAAwADAAMAAwADAAMAAwADAANwA3ADMANQBhADYANAA0AAAAAAADAAAAAwAAABwAAQAAAAACjAADAAEAAAAcAAQCcAAAAEAAQAAFAAAALwA5AH4AowClAKsAsAC0ALgAuwDWAP8BUwFhAXgBkgLHAtoC3CAUIBogHiAgICIgJiAwIDogrCEiIhIiYP//AAAAIAAwADoAoQClAKcArgC0ALYAugC/ANgBUgFgAXgBkgLGAtoC3CATIBggHCAgICIgJiAwIDkgrCEiIhIiYP//AAAAZwAAAAAAJwAAAAAALgAAAAAAAAAAAAAAAP7C/zUAAP4P/g4AAOCrAADgvOCB4IDgpeCF4B7fv97A3nMAAQBAAAAAXADkAAAA5gDuAAAA8AD0APYBJAFyAXQAAAAAAXIAAAAAAXAAAAFwAAAAAAAAAAAAAAAAAAAAAAAAAAAAxgCnAK4AqQDJANQA1wCvALcAuAChANYApQC7AKoAsQCkALAA0QDPANAArADZAAEACQAKAAwADgATABQAFQAWABsAHAAdAB4AHwAhACkAKwAsAC0ALwAwADUANgA3ADgAOwC1AKIAtgDYALIA5wBKAFIAUwBVAFcAXABdAF4AXwBkAGUAZgBnAGgAagByAHQAdQB2AHkAegB/AIAAgQCCAIUAswDaALQAzQCoAMgAywDgAOYA2wCVALwA3wDoAN0A3gCrAOQAlgC9AK0ABQACAAMABwAEAAYACAALABIADwAQABEAGgAXABgAGQANACAAJQAiACMAJwAkACYANAAxADIAMwA5ACoAeABOAEsATABQAE0ATwBRAFQAWwBYAFkAWgBjAGAAYQBiAFYAaQBuAGsAbABwAG0AzgBvAH4AewB8AH0AgwBzAIQAKABxAC4AdwDlAOMAuwC5AMEAwgDAAAABBgAAAAAAAAAAAAAAxgAAAMYAAAAAAAAAAAAAAAAAAAAAAADGp66pydTXr7e4odalu6qxl5iZmpucnZ6foKSw0c/QrNkBCQoMDhMUFRYbHB0eHyEpKywtLzA1Njc4O7Wittiy50pSU1VXXF1eX2RlZmdoanJ0dXZ5en+AgYKFs9q0zQAEBgsPICQzS05MTVBPVFhbWVpgY2FiaWtubG1we358fdzdyMvgo95439vh4ubTCCYAAAAAzAAAAAAAAJWWAFFvragAAMcAALy9pgAFBycocbq5wcLDxM4AhDoAyr6/AAAAq8XA1QMQAhESFxgZGiIjACUxMjQA5eroAADp5AAA4wAAAAMAAAAAAAD/tQAyAAAAAAAAAAAAAAAAAAAAAAAAAAABAAQCAAEBAQxHaW4tUmVndWxhcgABAQEr+BEA+DsB+DwC+BgEd/s3HQAABiX6xwUdAAAKsQ+cHQAAHlYSHQAADD4RACICAAEABwASACIAMAA7AEUAUABWAFwAYgBoAG4AdAB/AIUAkACgAK4AuQDDAM4A1ADaAOAA5gDsAPIA/QEMARABGAEcAVUBX0Euc3MwMUFhY3V0ZS5zczAxQWNpcmN1bWZsZXguc3MwMUFkaWVyZXNpcy5zczAxQWdyYXZlLnNzMDFBcmluZy5zczAxQXRpbGRlLnNzMDFCLnNzMDFILnNzMDFQLnNzMDFRLnNzMDFSLnNzMDFTLnNzMDFTY2Fyb24uc3MwMWEuc3MwMWFhY3V0ZS5zczAxYWNpcmN1bWZsZXguc3MwMWFkaWVyZXNpcy5zczAxYWdyYXZlLnNzMDFhcmluZy5zczAxYXRpbGRlLnNzMDFiLnNzMDFoLnNzMDFwLnNzMDFxLnNzMDFyLnNzMDFzLnNzMDFzY2Fyb24uc3MwMWdlcm1hbmRibHMuc3MwMUV1cm9ub3RlcXVhbGxvZ29Db3B5cmlnaHQgwqkgMjAxMyBieSBNYXR0b3ggU2h1bGVyLiBBbGwgcmlnaHRzIHJlc2VydmVkLkdpbiBSZWd1bGFyAKQCAAEANABLAGQAbQB4AIEAhwCLAJAAlwCcAKcAswC/AMUA3ADiAOcA9AD4AQkBGQEfAW4BcwGAAZABmAGfAakBzQHXAg8CPgJDAnICdwJ8AoECiQKRApsCzQLcAuIDEgMWAz4DQwN4A6MDtgO6A8UDzwPeA+IEEQQWBBoEJAQoBEYETgRUBHgEfASABIgEnQSvBLUEuQS9BMQE4gTpBPAE9wT7BP8FBAUKBSMFKAUsBUsFVAVZBYIFiAWSBZgFnAWgBbcFvgXEBcgF3wXlBekF8AX0BfcF/QYCBgYGCwYTBiUGLQYxBj0GQgZGBk0GUQZbBm4GdQZ5BowGlwaeBqIGpwa2Br0GwQbFBswG0QbVBtkG3gbiBu0G8Ab0BvkG/QcCBwwHEwcYBx0HIgcmByoHMAc6B0AHSgdQB1QHWAdfB2QHaQdtB3IHdwd7Ffsw+S2ZtwX7QQaZX/swJR2n9whwHfcRBpp8p/sIgG0nHfvC98AVvPeHvPuHf4AFQQYOonwd+1dbHfc4JQr3MSkdm1sFXR1aBQ4V+zMGTQopkQr4zkId/RyrHYkKygX5HAcOFSgd95EGWgoLB3x9BSosHc1uCgv9LXJYJx2AqQsV+SsmCg4zCgYL+5GwCgsHLQr8EAYL+5ExHQuceh34cX0d7iwKC5EKvQebu3wKmYQKC1wKzQapqAXPB7QdCzoKzyoKC3X4Ivq1FUX7IkeyCkbQSmgK9wT8fSMKNgpZcQoLBktMCgv6XhUuHe8WOgrOKgoLBjYdC/cjLR3vFn8K0CoK9wT+KyAd98xECqnACm16Cved/l4gClQdWnsFC/eX+Iv3FBWHj4f3RZOTKAqAlof3OS0K/BwGj1/7vP0raFfCCgaJqb33B6CcBfcLBpV/BSUHe1oF+BAGonwd++v3NxVEBoKW4/doBftuBw73kV0KC/cAMgo5swr34f3VIB33CGMKz6YdO0kK97v9ryAddfhD+MwiCg51+EP4zCMKevcTMQrj+2YiHXD3sPeEFSsdy0wF1waxYwVWB1ZVwHu7qaqzBcAHY7MF74YdDvrHFUiBCrKsHQv3Q6EKwcMF9Qf3TnEVpNucCpdp+wX9GXM6wgoGga4F+yf5PRWobqIKqAX4SvyIpR1UBSK2HfQHC/hO9xQVYh33NCUK9zV9HfdWBr98dPcgBfy/sAr4vwahfB379IoVKQqafQX8cQcOB5tXCgu09wubHd9hsJ2fs6trd1FjYQVHBje2Y3gFl/3YFfgoB/dM/FhpCvwoB/tM+FlwCpkFYx0LB0xFCgv9K8EdC18d90H+lCAdXx33Qf6UIAr3bz8d92f+cCAKdML5TxX9EAd7TJ0K97QHSsvMygX3cGUK+wqTHSZMgJYF9xMlFftSUgr3EQeamvDIBQ568GMK0KYdOkkK96M1Ih1CCnu7BQt091gWhwr3dX0dtAaVf8H7eYBcwgoGd75U94G1Hffudx33MPgyFYcd91JpHe2wHQ4GaB0LfML5WxX9K24d95UHZx37lQd8WwX3M4QdmloF+41SCveNB5u8fgoGDk4dRh0LfML5ThWoCvdidQrwyJaABfuiB3xOJx17yAX5EQebyb0KTQX7WJMdJ05/lwX3mAebyX4KBg5t+AD5jBX7kAZKTArMTAW7ZwpKnB3MfR27BstgHfsTOxWYHX2ZBfhxlR0O+5GUoR1/Cs4qCu8WhQpU/i4mHbxYHQt6908/Hfdg+6siHWz3fT8K0vvPIQprCoAFegdXVgVcB9q3wAt7dR0L9zH4dvh5FfxJB3tbBfcxjwr7IQb7K/vs+yv37AX7IScKe7sF+EkH9wP7nwXbBg5pHesGCwZiHQsF96WXCk0Fex0Lfh17C2KkHfd0mwr373cd9zEGe/hAFfdSB5qZBeywHSoGDveVXwpJ1wULygX5DwcLbPe8+xQV9xcGTPcUysoF+Q+nHctMBfcOBlH3IRX4cZMKmB0OfJoFC+x0Cgt4HcLDBfUHC7SkHfgyB/dM/GJpCvwyB/tM+GNwCpSofgoGqEH3HP0Uf12/Cn+5C3Ad7GcKC5taBQt1CgULevhX+YwiHXTAuwp+HX28HfkPch33IfsgFZqaBeyvCioGfJoFDp732fedJAoGWngKtAoLwR33MYoKC28KBguamgULB7dfBQuGCvvgBgsV+wX7jvcF+41fX/sz941ft7e39zP3jgULB1+3BQszCgcLcPhO+YwV/CsGdPsiv0Qd/M4He0wd+M6MHeoGwX0FDgdLyQX74FAdCwUhgB0LWfg+9yMVV3wF+1kG94b4jwX3EfwCB3P7IsGZBfdYBvuE/IyZHff/Bw5bBVqCCgv9EQd7TsIKBnsL9yNXfAULB3AdC/0rBwta+E73IRVXfQX7VpEK+M4HmqMd+BAGDgfDUwXzBgsGU/sQBQuTHQUL9z34iBVACmEGgJYFnAfAwQW5BzuaCguPCvszBguafQULXQr3FbIdC3yZBQssCg6rCimKHQsGfZoFCxUwCgsHmZkFC2z4APmMIx0LB03LqB37E2Md/W9vCvsUtQoOwrsKXR1aBQsF+zMLFVp7BfwlbR34JaodB0zJBQsHfHwL+scVSYEKC5QKBgv43BVACjMGMAoLlsAdRQdubgVHBm6oBdEHqKgFC/oAFZzGtLQF0QYLwR33MooKC8rKBQsHe0IKCwZ4+wNwPCcdf66m9y8FC1l4Cr2bBQv6XhULBfeSC7wF+zFQHQv3SLsVC7sdUwv7IgULkh0qHQsF+0QL+JwV9zOKCvcUBwu/HQ4HyUwLnDOmCgv7kQYLB0tmCgsHe1rCCgZ7vAULdAr7UkMKCzAKtQYLB5u7BQt9BSkGC22pBQvLywULgB3BwwULB4OEBVsGg5IFC/cDFjgdCxUiBlNVBSEHwwsHe1onHQ4VIwYLWp0KC7ucCptbBQsGTE0FCwa8ewULFaUKCwd7WwULB8tLBQsF0AYLAQAiAACrBQCKAAAjAQCxAAAlAACaAAAmAACyAwAnAwC2AwArBAC6AAAwAAC7AwCNAAC/AACOAAAxAACdAAAyAgDAAAA1AQDBAwA3AwDFAQA7AAGHDQBCAADIBQCQAABDAQDOAABFAACnAABGAADPAwBHAwDTAwBLBADXAABQAADYAwCTAADcAACUAABRAACiAABSAgDdAACVAABVAQDeAwBXAwDiAQBbAAGVDgCLAACPAAARCQALAAA9AAB0AAAbAAANAAB5AAACAABgAAAEAAAPAAByAAAgAAB7AAADAABoAAAcAAAQAABAAABcAABeAAA8AAA+AAAJAQCJAABvAAAOAABqAAB4AABrAQB2AABpAAB3AABBAAAIAAB1AAABAABlAABhAAAFAAGkAABiAABkAABfAACfAAAeAQAdAACmAAGlAAAGAAB6AAAMAAAHAAA/AAAhAABdAACqAABwAAChAABzAAClAABmAACZAAB9AACIAACFAAB+AACDAAB8AACAAACEAAB/AAGmAADsAgABAE0AUgBUAFYAWABaAFwAXgBgAGIAZABmAGgAagBwAHwAlgCgAKwArgCwALIAtAC2ALgAugC8AL4AwADCAMQAxgDIAMoAzADOANAA0gDUANYA2gDcAN4A4ADiAOQA5gDoAOoA7ADuAPAA8gD0APYA+AD6APwA/gEAAQUBBwEJAQsBDQEPAREBEwEVARcBGQEbAR0BHwEkASYBKAEqASwBLgEwATIBNAE2ATgBOgE8AUIBTgFoAXIBfgGAAYIBhAGGAYgBigGMAY4BkAGSAZQBlgGYAZoBnAGeAaABogGkAaYBqAGsAa4BsAGyAbQBtgG4Ae8B8QHzAfUB9wH5AfsB/QH/AgECAwIFAgcCCQIOAhACEgIUAhYCGAIaAhwCHgIgAiICJAImAigCawKuAuQC5gL+AzUDdQOQA7kD6QQMBFcEhgS1BM8E0QTdBOIE9AUUBTUFdAV7BX0FsgXyBgcGDAYfBjoGQAZlBncGhQaeBrAGugbMBtMG5wb0BwAHCQcRBy0HRQdhB2YHawdwB3MHuwgaCGwIxAkLCUQJYwm0CeMKAAoeCjAKeQqACrEK0AseCz0LkAueDBMMMgxFDGwM3g0vDY8Nkw2lDb0N0A3cDecOAg4ODigQPIaLvfjsvQGLvfgkvQOLBPiI+VD8iAb3jvvFFfs+95MF9+gG+yD7wBX3PveTBfySB/wGXhX3PveT9z77kwX8Bvi/Ffc++5P7PvuTBQ74fr4gHUcdOh00HUcKNAo5HTcdRgpTCj4dax1LClr4NxYhHVr3cT8K9x7+xxUhHVrc+eIVzvci0MEK0EbOph08SQr3l/3iFSEdWvYyHdj+XhUhHVr3TD8d90P+oxUhHWIKTwpPHYwKcgphClMddgpqClkKfx1ZHWUdQx04ClYdSgo8ClQKZApICvdaQR1eHVAKUh1NHTsdLgp2HWodVQpLHT0dVR15ClEKWwpsHVgKPQp5Hfh+viAKSB07CjUKSR01HTkKSh1RHV4KYR1OCjwdLx34fr4gHUcdOh00HUcKNAo5HTcdRgpTCj4dax1LClr4NxYhHVr3cT8K9x7+xxUhHVrc+eIVzvci0MEK0EbOph08SQr3l/3iFSEdWvYyHdj+XhUhHVr3TD8d90P+oxUhHWIKTwpPHYwKcgphClMddgpqClkKfx1ZHWUdQx04ClYdSgo8ClQKZApICvdZQR1eHVAKUh1NHTsdLgr4XfhD+MwiCvhiuxX3FpId+5MGS00F+9LCHfdDZwr7NEMKKywdy0wF95NdCvfRRR3rdApZcQoOdh1qHVUKSx09HVUdeQpRClsKbB1YCj0KeR34fr4gCkgdOwo1CkkdNR05CkodUR1eCmEdTgo8HS8dtaQd+NB9HfdAZwr7NYIdPAZYeAq+mwXadAr7NkMKPwZVmaP7IQX3S6QK95AHS8q1HfeUhgr72wZNTQX9HsEd9zEGDvt29335bhW0HfsnBn9FqpMF4waTgwVbB4OEBTMGbGsF+xMHqm0F9zwGgakFTeMVWrcdvAeTkgW7BtH7kBXK+1FMBw77dvd/+HAV95IHa6kF+xMGa20F+5IHq20F9xMGa/eIFftEtx33RAeTkwW7BtP8DxXK+1NMBw44Cvt992m8Fflb+yQHXfsyBbsGmXwF/K66HX74WPeEFfszBpt6Hfcymwr30AdLywX7kacKebsFvWkd7gaZfQX7NJgK+0QGTEwF/BD4EPdUBw5k9/f5jBX7kgZNSwX7FG4dvTYK+zSCHU4GWHgKvpsFyGcK+zJSCryyHfsxBpuECslLiQrLBfeQB0vLugr3kQcOgPhGvBX5Kq0K+5FSCveRB5qjCvvfsQr7kLodfvhI+MwV91T8EPwQoAq1Cpl8lgoHfXwFKI0K99AHS0UK7gaZfQVZuQp197CpHUzLBa0dS0sF/QzCHfeRBsrLBffQRR3uBpl9BVkH+58E+zKCCvcyfR3uBg48+C/5DBV69xQF++8Gc/siwJkF918G+3j8z2dOBbUKfbgFDm34AvmMFfuSBkpLBfuNqx1NTAX7lQfMS5IKycsF95UHTcrJygX3jQf7Ez0V+zAHiR33MJUdmfvbFfs4B32zHX2ZBfc4B5maBe0GDnX4CPmMFfuRvgr70AfKSwX3QmcK+zIHfHwFKo0K+QwH+xQ9Ffs0Ugr3NOkd7AYOUveb+MIV9zCkbub7I0Sl9zEFKgal+zH7ItJtMfcycfsE+wTXUdT3ItP7ItrFBQ77U7T5PBVx2wX3MgZ/afcG/RmjOnwKlq4FDo4K+5Tc+PI3CjP7oj4K+5RWCg73atz3RDcK9ycWKwr3JxYrCg77hfdn+YwV+zJOHfupB577dQXjBp73dQX3qQcg/Ks+CvuF90SWHWj83BX3MgZ7vAX3qQd493UFMwZ4+3UF+6kHDve9+VL4UBU2HVmfCvsvnwr7HW0d9wcGdfsTBS5tHdOfHfcxnx33CTMdLAah9xMF+yv7ExX7MAah9xMF9zAGDvuU3PdEPgqOCmj4APmMFfuTpwp8uwW9Wh2ZfZAdmAo7vh37AgeeTAXjBp3KBappHd0GycwF984H+538nD4KaPfJlh37B/zcFfeTBsrLrAoHm7u9ClsFWUMKKwZ9mXUdmZoF2wbKyQX3Agd4ygUzBnlMBWxDCjkGTUoF+84HDjyaHfcJFm5uvfunBbgGv/enbagFDvuxmh0O+5Tc+PI3CjP7olcdvwX3OHQdDvtT96f5PBWj23wKlmn7A/0ZcToF9zIGf64FDt34s5uRHfs+9xz7FBX3RPcUKlsd+W9pHez3E/tEvgr8FAdRUMVQBfwVBw77PveZSxX4FQfGxlDGBfgUjh37XLf7FBX3g54K+4MGDvtc95n7FBX6i/uC+xPsB4Ud/W9vCvsUBg77XPb7FBX3RJ4K+0S+Cv4LBw77XPeZSxX6C44d91v5KPhfFVp7BfyabR34mqod3fiz+F+RHWj4PvhfFVl7BfuvbR33rwa9ewUOhPeo+QpzHfeAX3MdDoTU+TZzCveAt3MKDvtc96j5CnMdDvtc1Pk2cwoOaFYK9xgWsR2WgAV6B1ZWBVwH2rfBwAX3N3QdDmiDHffJFkAKYAaAlgWcB8HBBbkHOpoKDmiDCvcYFrEdloEFeQdWVwVbB9q3wcEF9zZ0HQ77lIMdDvuUgwoO+5RWCg77nQ6O90f5ThVn+4N7fAVLBlybdvsztArLBpp9ZPuSdFonHYK8sPeSmpkFywa6e6D3M1p7BUoGf5qh9zWbmgXwBr98ifcgBftmBg5s98H3kxVZB319BWUGqvgRBZIGmX0FWAd6TB33FAdMygVCBpDJBVYGhk0F+xMGS0wF/JIHy00F1QaGTAXABpDKBfcSBsrJBfcWB5u7nAor+wQVhx339WkdsgZs/BEFDnj3t6kdS8sFWVsdqgebowpsgh1bBktLBfvOB8tKBfdDBpl9Bfs0B4kdvAebu3wKmoQKy0sFu2cKbZwdqX0dvaoK99KGCvtFBn2aBfczkwpZBw6q93n4LxX3kwaaxgX7ovcqBnAd7QaZfAVZB3tMHfcUkh37kwZNTQX7eDsHfFAF6lA7BnxQBer7egbJTAX3k4Yd+zMGm1sFWpgKKVsd9yr3dgeaxgX7hQYOlPhE9xQV+4AGg5Po9zuamQXLBrtYHVupCvc1fR33HAa/fHP3IAX7hb4d+4OCHUsGW3gKu5sFywaafSr7Q5kd+CUHo/cjBQ6e+HP5VBUvCvcA+8UF+xZQ9ysGn1AF+z9R90X7QwZ7WwX3LwZ9uwX3Q/dDxfs9B5/GBfcpxvsUBg77Jaj31RWdxrSzwx3eYbKfnbGta3dRYWEFSQY3swoO9wT3/vlwuR1TBfQGwMMF9QdClbYKSLgK96H7eRVNewX77gZMeArKmwX37gbJewX7SlK5HVQF9AbAwgX1B0KVFahgCm5uBUgGbagFzwepqQUOovhb+N8VTHsF+5QGTHgKypsF95QGynsFKwRMewX7lAZMm34KB8qbBfeUBsp7BQ4xzvmzFfen/Au3X19f+6f8C1e/92z4A/ts+AQFDjH4JPmAFftc/AT3XPwDWVf7qfgLX7e3t/ep+AsFDqL4W/hfFVp7BfuvBqAd96+qHWj3uPhQFd8GvVgdWXsFVAa09z0FMgZj+z0F+yBtHfcDBm77FAU5BlqbfgoHtArBBmP7PwXjBrP3PwX3IQa9e8IKB1l7BfsFBg7lQB1Clx0O9/BAHfdfwrsdVFQFIgfCUwXzBsLDBfQH+9+XHffZFpkKRQdtbgVJBm2oBdEHqagFDqL4KvhQFTzZBpu9fAqbWQU9PQegHdk+rgrY2gdUHQ6B+ET4UBX7kwZ9mgX3M4wd7nQKWZ4debusCgdNywX7kr4K+5AHyk1MSgX7kQfKS5IKycsF95GbB7tYHftR+zEV+zSCHSiKHfc0jB3uBg73IfjQ+JYV+433BfuO+wVft/eO9zK3t7df9437MgUO98X5Zhb8gYod+O+MHff1Bpl9BfwSmApnWx33hgduqAX7VgZubgX71gelCvfzBsrJBfiRkh38kL4d/Y6gCvi/Bvvi+AAV9zR9Ha9nCvs0gh1nBg77lvdPOxX6K60K/iu5Cvdr9/wW+973UgX4EAf33vdS9977UgX8EAf86a8V95/7Lfef9y0F98cH+5/3Lvuf+y4F9zL75BX4AQewsAX3JgavZgVCB5RvBTAGlacFqAeCkwVTBoKDBfunB5SDBcMGlJMFqAeBpgXmBoJwBUAHZ2cF+yYGDkr3/vjjFTz3DAabowr7DD0HoB3Z/DOuCvgz2gdUHQ77fPdRoQrCwwX1B0KVtgpHuAoO9135GjsV+asHm7wF/M6+HfvSsQr8EQd7TB35UAeZmgXbZwr9ULkKIPdb+EoV+0fyBfdiB/dH8vdGJAX7Ygf7154V9yU49yTeBfc7B/sk3/slNwXg+14VkJoF92MHhpoF8wafeAX7AAd3d5xBkXsFWgaPmnrSiI8FfgaHhgVFB5B8Ban3FRWQkAXGB4aQBWwGh4YFUAePhgUOePgG+NwV+0YGfpkF9yiTClkHfUwd9xaGCvuSBktNBfzbwh33QwaZfAX7KQeJHbwHm7x8CppaBfsTB8tLiQrLBfjdB/sVOxX7DgeJHfcOlR0OMfdD+V8VeZAFbgaHhgX7RwePfQVaBpCZBfdHB4aQBWwGe4aSuKwKBvca+0UVbgZm4AX7GAeQfQVaBo+ZBfdkB4ebBbcGv/sMvvcMBbcGh3sF+2QHj30FWQaRmQX3GAcOpF8dDtj4R/q1FUb7IkWyCkfQSWgKDmj3SRa1YgVXB1VVwXu5qauzBb8HYrQFDtj3J3cKmQbRRs+mHTuACnmBHQ7d90ShHYUK7hYuHQ6k92mUHbKcMqYKDvc++KT6PxVuqAX71wZubgVIB6UK99cGqKgFDo73x0QKqG2iCqkFDuX3J5sd3mGxnZ6zrGt3UWJhBUgGN7ZieAUO+sr4bPh2FfuV96r7Yf2M92H3qfeV+6n3YvmM+2IG99P9jBX3Yvep96j3Yfuo1PgG92H81Ab5bl8VnaKZcZ26OXarBhz6w4wVSEdHzwX46xZGR0fPBfnMFkBEBfv7BkTSBXx9FdRCBfyyB0JABfiq+L0VSNDOzgUc+t2KFdNDBfyyB0NBBfc5+UQV+4kHQ0UF94YH+AXUFdNDBfuHB0PRBfc6/E8VQtUF+LIH1NMF+f37IxWknKKio3qgcnF4eHFwnnilH9AEl5WBfn6BgX99gZWYmJWVmR/8sEEVQ9MF9+UG1kMF/D77OxX3cwfSRAU4B/jnfxWhYAeAf4yZmJeMlh+2oF0GgIGKhIMfhIOJgIMagY2AkoQeg5OVipYb/mM/FfwxBtTTBfegBvmNFj5DBfuIBtTTBfea+yoVR8/PzgX3gFsVvQZZYwV23aBYjAe+sgWgOQcc+wH7DhVC0wX4MQZDQwX4lRZC0wX3iQbXQwX+qPuZFUPVBfeFB9NEBfe9FtPSBfuGB0NBBfh4jRVE1AX3hQfSRQX4lXUVdJ15oqKdnaIeqTkHnXcVuYUGfYOCfHuElZgeefsBFaqKBmx3BXAHrKUFf46UhZcbnJOYmx+qOQe4dxWgiQaDioSBgoqSkx4c+i/7GBXPzs5IBffbFs/O0EgF90oWz87PSAX4o6oVdbIHtm0FpQd0mqKaBaUHYG0FDh6gN/8MCYsMC/ifFPiNFZwTAKQCAAEANABBAGIAgACWAJ8ApwCtALQAvADGAM0A2wDnAP8BFgEdASQBPQFBAVEBYgFnAWsBcgF/AYUBlQGfAakBrAG8AcMBzgHSAdcB4gHpAhICHAIrAjECSQKCAogCjwK+At0C+gMjAykDNwNCA00DWQNfA2wDnQOhA+ED5gPqBAsEGAQcBDsEVQRcBHoEhASKBI8EnwSoBM8E1ATXBOEE5gTqBO8E9AT/BRgFHAUgBSoFNAU5BUcFTAVSBVYFWQVdBWMFaQVvBXUFjQWRBZcFnAWgBasFrwWzBboFwQXRBdgF3QXhBeUF6QXvBfMF9wX7Bf8GAwYHBhAGFwYbBiEGLQY9BkIGSgZRBlgGXAZgBmQGbQZyBngGfAaABoQGjQaYBp8GpQasBrEGtga6Br4GxgbMBtUG2AbcBuAG5QbpBu4G8wb4Bv0HAQcEFfsv+S2YtwX7QgaZX/svJR2k9wKdnfcEv5x5svs2gG0nHfvC988Vuvd4tPtafoBMbQUOIx37FDsV/HFDCikKDkEK+9IHzUsF90JnCvs0JB330QdMygX7RAZ8mgX3NDAdC0EK+64HzUv3QlCFHfseJB33rAdMy/tExocd9x5sChX3LvhLLwr3L/xLBfttwR33LwZ9wwoHmpkoCnyaBQsHm6Md9zEGC1Ad9zEGCwXLMx1LBgsrkQr4cVodCwaoqAXPB26pBQswCuMGQAoLBpl8BVkHekwd9xSnHQtwHfdXBr98dPcgBft1+CL6tRVF+yJHsgpG0EpoCvcE/H0iCg6wwwX7TwadbTb7qzb3q52pBftPBrBTC19fBTNxHQstHfEWLh0L+gAVnsaztMMd32GxnZ+zq2t4UWJhBUYGCwX3Mwv3zEQKqcAKbXoK953+XiAd9yMtHe8WfwrQKgr3BP4rIAoHmkQdCxUrCgts+AD5jCEK9wAyCjmzCvfh/dUgCm1gCpkKC/cIYwrPph07SQr3u/2vIApsY/cLMh2V+2YhCp73JTEKUv1VJAo3Cg76oxUz+0eyevdE9zBIzwULt7cF43QdCxX3FpIdtR1JTQULWycdCwd8fQUL+r2lHVRkHUGWFQtmCvc0aR0LdI8d9+AGy8oF95gHSsvMyhr3jGUK+zC3CvcT+zAV+zoSCvc5fR3sBg73bz8d92f+cCAdbOcyCSe2Y3gF93P7ECEKgAp6gR0LbOf55hXP9yLP0AULm5AdBwuA+FyICvxwL/hwZh0FDm0KqQULlB2xrB0Llgr4H+NgHU3JBfviBvcj+yAVmZoF668KK4od9zSMHbv3E1uKHQ5NBf0PBwtoHfzOQwoLdPe0FvcyBnfLTPe109NcHcgF90d1CvuolIC6+2gFhPgiFSZNgJYF92g2CvsmBw50uB33ugebvQX7Ygan+xQFr/sdBokd+HEHmZoF7YgdYqQd6Wkd90SkCvfTrh3qJgp7974V9zQHZx28Cg73yfmciAr8YC/4U5a1nAqWYTD8UzD4YGYd3/hK4vxKf10F99EGf7kFDm8dfJoFC3D3Axb3kYYd+zMGKx0ObPdXewr3AfurIQp695E/Cvce+88iHdz3RFcdwAX3N3QdC7x+Ck4dC573pV8KStcFgv2+JAqs+KYWXcf7NPga9yT3jbvIBftGBpV1+zz7vwX3pEId/SqvHfcrB8v3A/cH+6qAagUOymAdC4D3zvgRFfca996xvAX7SAaaa0H7S0H3S5qrBftIBrFa9xr73vsa++BlWgX3SQZ5qtf3T9f7T3lsBfdJBmW8BQ6hHToKCwadHQti90jIFfdHdQr3RPcBy8lcHfgzFfdfNgr7HQd8fSZNBQ76oxUz+0exevdE9zALkAoHC/uRevniFc33ItHQBZkG0UbNph09gAp5gR33FP2yJh1awvlcFf0rrx33kmkdywa7WB1bqQr3NSkdDncKmgbQRguNHfuCSRXNBjv8BAX39gf3Avx/FUcG3vgPBfwBBw5yHfci+yAVZx0LyqgdWx0LBpp8BQv3IgXZBsL7EQWcBsX3EQULBfcjhB2bWgULZPeg+YwVm1oF/M63CvcSB5u9fAqbWQX7YKsdBfeTXQr5HAebvAUOFbEdlQswHQ6QCgZuqQXQB6gLTAU4HQuCHSoLBfshfQoHfEIKC/ud9xk/Cn7+lyYdFfcz+463X19f+zP7jV+39wb3jfsG944FCwaFHQsHmpkL+526ewrZ/nMmHfniFc/3Is/QBQubkB0HC4D4XIgK/HAw+HBmHQUObQqpBQuUHbGsHQuWCgYLJwoOBfsxC25gCqUKCwZT9xAFCz/3RPswC5gKKFsdC9z5uGsKgQV5B1dXBVsH2rfAwQX3NnQdC1uVCgt/Cs8qCgsHS8kFC3u7BQv5QxWp1JwKlm4wC5IKywsGhwoL+SsHm7wFC/ui90i7Jh1bHbwHnb0d+xSgCveRqgoL+5Tc+Gg+CooKiwoLbQVHCwaHHQuiHQYLlR2ZfQULjB3tC5kdBwsF+zILch2bCgerCgupbgULX1dXBfs4cR0LfR33RKoKC5AdBgsF9+CkCgv3FCmKHflvlAr3EwsGnvcDo9l+CgaVaXH7LwULB8pLBQv5jKUdVXgdCwVGB25tCgu8BfsyTh0LBroKC6huBQv3RwULBkxLBfsUnh0Lex3IBQt7BUtbHQsGtR0LfXwFCwX3FAsHm7wF+zNOHQsGe1oF9zIGe7wFC2cK/HGCHQsxHctMBQugCvdEZwoLRgV8Bgu2YXgFC7ybBQv3RAYLwB1GB25tBQtDCiqRCgsGtB3QB6moBQueHQ7LygUL+VwVC/s0bx0LnAqaCwZMSwULBfdCBgttBUYHC9AFmgYLBfcxC7sFDgAAAQAAAAwAAAAAAAAAAgACAAEAlgABAOIA6gADAAEAAAAKADYAdAACREZMVAAObGF0bgAcAAQAAAAA//8AAgAAAAIABAAAAAD//wADAAEAAwAEAAVjcHNwACBjcHNwACZrZXJuACxrZXJuADJtYXJrADgAAAABAAAAAAABAAAAAAABAAEAAAABAAEAAAABAAIAAwAIABAAGgABAAAAAQAaAAIAAAACABwFugAEAAAAAQi4AAEKygAFAAUACgABCsoABAAAACcAWABqAHwAjgCgALIAxADWAUgBugJEArYCvAMuA0ADUgNkA3YDiAOaA6wDsgPEA9YD6AP6BAwEHgQwBKIFFAUaBSwFPgVQBWIFdAWGBZgABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kAHAAB//EAAv/xAAP/8QAE//EABf/xAAb/8QAH//EAPP/xAD3/8QA+//EAP//xAED/8QBB//EAQv/xAEr/8QBL//EATP/xAE3/8QBO//EAT//xAFD/8QCG//EAh//xAIj/8QCJ//EAiv/xAIv/8QCM//EAHAAB/+kAAv/pAAP/6QAE/+kABf/pAAb/6QAH/+kAPP/pAD3/6QA+/+kAP//pAED/6QBB/+kAQv/pAEr/6QBL/+kATP/pAE3/6QBO/+kAT//pAFD/6QCG/+kAh//pAIj/6QCJ/+kAiv/pAIv/6QCM/+kAIgAB//EAAv/xAAP/8QAE//EABf/xAAb/8QAH//EAOP/sADn/7AA6/+wAPP/xAD3/8QA+//EAP//xAED/8QBB//EAQv/xAEr/8QBL//EATP/xAE3/8QBO//EAT//xAFD/8QCC/+wAg//sAIT/7ACG//EAh//xAIj/8QCJ//EAiv/xAIv/8QCM//EAHAAB/+kAAv/pAAP/6QAE/+kABf/pAAb/6QAH/+kAPP/pAD3/6QA+/+kAP//pAED/6QBB/+kAQv/pAEr/6QBL/+kATP/pAE3/6QBO/+kAT//pAFD/6QCG/+kAh//pAIj/6QCJ/+kAiv/pAIv/6QCM/+kAAQBK/+kAHAAB//EAAv/xAAP/8QAE//EABf/xAAb/8QAH//EAPP/xAD3/8QA+//EAP//xAED/8QBB//EAQv/xAEr/8QBL//EATP/xAE3/8QBO//EAT//xAFD/8QCG//EAh//xAIj/8QCJ//EAiv/xAIv/8QCM//EABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kAAQBK/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kAHAAB//EAAv/xAAP/8QAE//EABf/xAAb/8QAH//EAPP/xAD3/8QA+//EAP//xAED/8QBB//EAQv/xAEr/8QBL//EATP/xAE3/8QBO//EAT//xAFD/8QCG//EAh//xAIj/8QCJ//EAiv/xAIv/8QCM//EAAQBK/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kAAQBK/+kAAgV+AAQAAAaYB84AEwAUAAD/r/+Z/7f/xQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/xAAAAAAAA/+z/8QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/6QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/9sAAP98/7cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+o/4v/vQAAAAAAAP/jAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/qP+L/70AAAAAAAD/4wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/7X/X/+LAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/5wAAP/F/9T/i/+3/7cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/xAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/nAAA/+P/qAAA/6//qP/x//H/6f/x//EAAAAAAAAAAAAAAAAAAAAA/+wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/1AAAAAAAAAAAAAD/8QAAAAAAAAAAAAAAAAAA/+kAAAAAAAD/7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/nAAA/5kAAAAAAAD/xQAAAAAAAAAA/+z/7P/sAAAAAP+3AAAAAAAAAAAAAP+LAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/iwAA") format("opentype");
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --gold: #C98F23;
+    --purple: #2321AF;
+    --cream: #F7F7F5;
+    --dark: #0E0A04;
+    --text: #000000;
+    --text-light: #666;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: var(--text);
+    background: var(--cream);
+    line-height: 1.6;
+    font-size: 15px;
+  }
+
+  .page {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
+    position: relative;
+  }
+
+
+  /* ── COVER ── */
+  .cover {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(ellipse at 30% 40%, rgba(201,143,35,0.05) 0%, transparent 60%);
+  }
+  .cover-content {
+    position: relative;
+    z-index: 1;
+    padding: 80px;
+  }
+  .cover h1 {
+    font-family: 'Gin', 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 48px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    line-height: 1.15;
+  }
+  .cover .subtitle {
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 24px;
+  }
+  .cover .tagline {
+    font-size: 18px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .cover .cover-meta {
+    margin-top: 80px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+  }
+  .logo-area {
+    margin-top: 40px;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+  }
+  .logo-area svg {
+    width: 120px;
+    height: auto;
+  }
+
+  /* ── HEADINGS ── */
+  .section-heading {
+    font-family: 'Gin', 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .section-subtitle {
+    text-align: center;
+    font-style: italic;
+    color: var(--text-light);
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  /* ── CONTENT BLOCKS ── */
+  .content-block { margin-bottom: 28px; }
+  .content-block p {
+    font-size: 14.5px;
+    line-height: 1.65;
+    margin-bottom: 10px;
+  }
+
+  /* ── GOLD DIVIDERS ── */
+  .gold-rule { width: 40px; height: 1px; background: var(--gold); margin: 20px auto; }
+  .gold-rule-full { width: 100%; height: 0.5px; background: var(--gold); margin: 24px 0; opacity: 0.35; }
+
+  /* ── CALLOUT BOX ── */
+  .callout-box {
+    border-left: 3px solid var(--gold);
+    padding: 20px 24px;
+    margin: 28px 0;
+    background: rgba(201,143,35,0.06);
+    border-radius: 0 6px 6px 0;
+  }
+  .callout-box p {
+    font-size: 14.5px;
+    line-height: 1.65;
+    margin-bottom: 0;
+  }
+  .callout-box .callout-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--gold);
+    margin-bottom: 6px;
+  }
+
+  /* ── OPTION CARD ── */
+  .option-header {
+    margin-bottom: 32px;
+  }
+  .option-num {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+  }
+  .option-title {
+    font-family: 'Gin', 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 36px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .option-subtitle {
+    font-style: italic;
+    color: var(--text-light);
+    font-size: 14px;
+  }
+
+  /* ── WORTH READING BOX ── */
+  .worth-box {
+    background: rgba(201,143,35,0.08);
+    border-radius: 8px;
+    padding: 22px 26px;
+    margin-bottom: 28px;
+  }
+  .worth-box .worth-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--gold);
+    margin-bottom: 8px;
+  }
+  .worth-box p {
+    font-size: 14.5px;
+    line-height: 1.65;
+    margin-bottom: 0;
+  }
+
+  /* ── DETAIL ROWS ── */
+  .detail-row {
+    margin-bottom: 20px;
+  }
+  .detail-label {
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-light);
+    margin-bottom: 4px;
+  }
+  .detail-row p {
+    font-size: 14.5px;
+    line-height: 1.6;
+  }
+  .detail-row ul {
+    list-style: none;
+    margin-top: 6px;
+  }
+  .detail-row ul li {
+    font-size: 14px;
+    line-height: 1.55;
+    padding: 4px 0 4px 20px;
+    position: relative;
+  }
+  .detail-row ul li::before {
+    content: '\2022';
+    position: absolute;
+    left: 4px;
+    color: var(--gold);
+  }
+
+  /* ── NOTE BOX ── */
+  .note-box {
+    background: rgba(35,33,175,0.06);
+    border-left: 2px solid var(--purple);
+    padding: 16px 20px;
+    border-radius: 0 6px 6px 0;
+    margin-top: 16px;
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: var(--text);
+  }
+  .note-box strong { color: var(--purple); }
+
+  /* ── CAUTION BOX ── */
+  .caution-box {
+    background: rgba(201,143,35,0.06);
+    border-left: 2px solid var(--gold);
+    padding: 14px 18px;
+    border-radius: 0 6px 6px 0;
+    margin-top: 12px;
+    font-size: 13px;
+    line-height: 1.55;
+    font-style: italic;
+    color: var(--text-light);
+  }
+
+  /* ── STRENGTHS/RISKS COMPACT ── */
+  .sr-row {
+    display: flex;
+    gap: 32px;
+    margin-top: 20px;
+  }
+  .sr-col {
+    flex: 1;
+  }
+  .sr-col h4 {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  .sr-col.strengths h4 { color: #4A6741; }
+  .sr-col.considerations h4 { color: #996633; }
+  .sr-col ul {
+    list-style: none;
+  }
+  .sr-col ul li {
+    font-size: 13.5px;
+    line-height: 1.5;
+    padding: 3px 0 3px 16px;
+    position: relative;
+  }
+  .sr-col.strengths ul li::before {
+    content: '+';
+    position: absolute;
+    left: 0;
+    color: #4A6741;
+    font-weight: 700;
+  }
+  .sr-col.considerations ul li::before {
+    content: '\2013';
+    position: absolute;
+    left: 0;
+    color: #996633;
+    font-weight: 700;
+  }
+
+  /* ── PERCENT BAR ── */
+  .percent-bar {
+    display: flex;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 10px;
+    margin-bottom: 6px;
+  }
+  .percent-bar .seg {
+    height: 100%;
+  }
+  .percent-labels {
+    display: flex;
+    font-size: 11px;
+    color: var(--text-light);
+    margin-bottom: 20px;
+  }
+  .percent-labels span {
+    text-align: center;
+  }
+
+  /* ── EXISTS BOX ── */
+  .exists-box {
+    background: rgba(35,33,175,0.06);
+    border-left: 3px solid var(--purple);
+    padding: 16px 20px;
+    border-radius: 0 6px 6px 0;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.55;
+    font-style: italic;
+    color: var(--purple);
+  }
+
+  /* ── CLOSING ── */
+  .closing-questions {
+    list-style: none;
+    margin-top: 12px;
+  }
+  .closing-questions li {
+    font-size: 14.5px;
+    line-height: 1.6;
+    padding: 8px 0 8px 28px;
+    position: relative;
+    border-bottom: 0.5px solid rgba(0,0,0,0.04);
+  }
+  .closing-questions li:last-child { border-bottom: none; }
+  .closing-questions li::before {
+    content: attr(data-num);
+    position: absolute;
+    left: 4px;
+    font-family: 'Gin', 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 16px;
+    color: var(--gold);
+  }
+
+  /* ── SCRIPTURE ── */
+  .scripture {
+    text-align: center;
+    font-style: italic;
+    color: var(--text-light);
+    font-size: 14px;
+    margin: 28px 0;
+    padding: 0 40px;
+    line-height: 1.7;
+  }
+  .scripture .ref {
+    display: block;
+    margin-top: 6px;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: var(--gold);
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    .page { padding: 32px 16px; }
+    .cover-content { padding: 48px 16px; }
+    .sr-row { flex-direction: column; gap: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════ COVER ═══════════════ -->
+<div class="page cover">
+  <div class="cover-content">
+    <div class="subtitle">Albert Gray Book Project</div>
+    <h1>Choosing the<br>Book Direction</h1>
+    <div class="tagline">Storyline Creative</div>
+    <div class="logo-area">
+      <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" version="1.1" style="width:200px;" viewBox="0 0 488.4 199.6"><defs><style>.st0 { fill: #fff; }</style></defs><g id="Layer_1-2"><g><g><path class="st0" d="M169.7,196.9v-27.6l2.8-2.7h11l2.7,2.7v5.6l.7,2.1h-6.9l.7-2.1v-2.2l-.6-.6h-4.3l-.6.6v20.7l.6.6h4.3l.6-.6v-2.1l-.7-2.1h6.9l-.7,2.1v5.6l-2.7,2.7h-11l-2.8-2.7h0Z"/><path class="st0" d="M190.2,199.6l.7-2.1v-28.8l-.7-2.1h14.4l2.8,2.7v15l-2.8,2.8,2.4,10.3.9,2.2h-6.8l.5-2-2.4-9.9-.4-.5h-1.8l-.6.6v9.8l.7,2.1h-6.8ZM201.2,181.6l.6-.6v-8.3l-.6-.6h-4.3l-.6.6v8.3l.6.6h4.3Z"/><path class="st0" d="M211.1,199.6l.7-2.1v-28.8l-.7-2.1h16.5l1,6.1-2.3-.6h-8.5l-.6.6v6.8l.6.6h2.8l2.1-.7v6.9l-2.1-.7h-2.8l-.6.6v7.1l.6.6h8.5l2.3-.6-1,6.2h-16.5Z"/><path class="st0" d="M251.6,199.6h-6.9l.5-1.3-1.2-5-.6-.6h-5.4l-.6.6-1.2,5,.5,1.3h-6.9l1.1-2.2,6.8-28.9-.6-1.9h7.5l-.6,1.9,6.8,28.9,1.1,2.2h0ZM239,187h3.2l.5-.5-2.1-10.6-2.1,10.6.5.5Z"/><path class="st0" d="M268.7,172.7l-2.4-.6h-4.1l-.6.6v24.8l.7,2.1h-6.9l.7-2.1v-24.8l-.6-.6h-4.2l-2.3.6,1-6.2h17.7l1,6.2h0Z"/><path class="st0" d="M277.7,199.6h-6.8l.7-2.1v-28.8l-.7-2.1h6.8l-.7,2.1v28.8l.7,2.1Z"/><path class="st0" d="M293.5,197.6l.5,2h-7.6l.5-2-5.9-27.8-1.3-3.2h6.8l-.4,1.3,4,20.7,4-20.7-.5-1.3h6.9l-1.3,3.2-5.8,27.9h0Z"/><path class="st0" d="M302.6,199.6l.7-2.1v-28.8l-.7-2.1h16.5l1,6.1-2.3-.6h-8.5l-.6.6v6.8l.6.6h2.8l2.1-.7v6.9l-2.1-.7h-2.8l-.6.6v7.1l.6.6h8.5l2.3-.6-1,6.2h-16.5Z"/></g><g><path class="st0" d="M136.2,63.8c-14.1-.2-27.9.2-41.8,0-1.8-2-3.7-4-5.4-6,.3-.7.8-.6,1.2-.6.4,0,.7,0,1.1,0,14.8,0,29.6-.1,44.5-.2h3.1c.4-.7.8-1.3,1.1-1.9,1.8-4.2,3.6-8.3,5.4-12.5.6-1.3,1.3-2.3,2.6-3,.9-.5,1.7-1,2.6-1.4.5-.2,1-.4,1.5-.5,1.9-.3,2.7.6,2.3,2.5-.2,1-.5,1.9-.9,2.9-1.5,3.9-2.9,7.8-4.4,11.7-.3.7-.5,1.5-.8,2.5,1,0,1.8.1,2.6.1,10.1,0,20.2,0,30.3,0,28,0,56,.1,84,.2.8,0,1.6,0,2.5,0,.7,0,1.4.4,1.6,1.2.2.8,0,1.4-.6,2-1.3,1.3-2.7,1.9-4.6,1.9-7.5,0-14.9,0-22.4,0-14.3.1-28.5.3-42.8.4h-1.4c-10.6,0-21.3,0-31.9.1-6.2,0-12.4.2-18.5.3-.4,0-.9,0-1.5.1-5.1,12.6-10.1,25.3-15,37.9-.1.3-.1.7-.2,1,.3,0,.5.2.6.2,3.4-.9,6.8-2,9.9-3.7,3.1-1.7,5.6-4.1,7.7-6.8.7-.8,1.1-1.9,1.4-2.9,1.4-4,3.3-7.7,5.9-11,1.2-1.6,2.6-3.1,4.1-4.3,1.7-1.5,3.4-3,5.1-4.5,1.1-1,2.3-1.7,3.9-1.2.6.2,1.3,0,1.8-.2,3.7-1.5,7.5.6,9,4.8.4,1,.5,2.1.6,3.2,0,.8,0,1.6,0,2.4,2,1.1,3.8.9,5.5-.2,1.6-1.1,2.9-2.5,3.9-4.1.9-1.5,1.7-3,2.6-4.5,1.3-2.3,2.5-2.7,5-1.7,2.2.9,4.4,1.7,6.8,1.7,2.1,0,4.2-.3,6.1-1.2,1.4-.6,2.9-1.1,4.5-1.1.4,0,.9,0,1.4,0,.9.2,1.5.9,1.3,1.7-.1.8-.4,1.6-.7,2.3-.8,1.6-1.6,3.1-2.4,4.6-4.1,7.2-7.3,14.8-9.5,22.8-.2.7-.3,1.4-.5,2.5.7-.4,1.1-.5,1.3-.8,6.3-5.8,11.6-12.5,15.9-19.9,1.6-2.8,3.1-5.8,4.5-8.7,1.2-2.6,3.5-3.6,5.9-4.3,1.1-.3,2,.3,2.2,1.4.4,1.6.3,3.2-.3,4.8-1.5,3.8-2.6,7.7-3.4,11.8-.9,4.1-1,8.3-1.3,12.4,0,1.1.2,2.2.4,3.2.2.8.8,1.3,1.6,1.2.7,0,1.5-.2,2.1-.6,1.4-.9,2.9-1.9,4.2-3,4.6-3.9,8.4-8.5,11.8-13.5,2.7-4,5.2-8.1,7.3-12.4.7-1.5,1.7-2.6,3.1-3.3,1-.6,2.1-1.1,3.1-1.6.5-.2,1-.3,1.6-.3.9,0,1.6.5,1.7,1.4,0,1-.2,1.9-.3,2.1-.6,1.7-1.5,3.4-1.8,4-2.1,4.1-5.1,10.1-8.4,17.5-1.6,3.6-4.5,10.1-11.8,28.8-2.5,6.4-5.8,15-9.6,25.1-2.3,1.9-7.6,6.1-9.3,4.8-.5-.4-1-1.4,0-4.8,2.3-8.2,4.9-13.3,7.8-19.9,1.2-2.7,2.8-6.9,6.1-15.3.9-2.4,1.7-4.4,2.2-5.8-.4.2-.9.6-1.5,1-2.3,1.5-3.9,2.4-6,3.1-1.6.5-3.2.6-4.8.5-1.9-.1-3.2-1.1-4.3-2.6-.8-1.2-1.3-2.6-1.6-4-.7-3.7-.8-7.4-.3-11.1,0-.4,0-.8,0-1.7-.8.9-1.2,1.5-1.8,2.1-2.8,3.4-5.6,6.9-8.5,10.3-1.6,1.9-3.5,3.4-5.6,4.7-.9.6-1.9,1.1-3,1.3-2.6.7-5.2-.4-6.4-2.8-.5-.9-.8-2.1-.8-3.1,0-1.5,0-3.1.3-4.6,1-5.2,2.6-10.2,5-14.9.9-1.9,1.9-3.7,2.9-5.6.3-.6.5-1.1.8-1.8-3-.6-5.9-.7-8.6-2.4-.5.7-.9,1.2-1.3,1.8-1.5,2.5-3.3,4.8-5.5,6.7-2.7,2.3-5.7,3.9-9.4,3.5-.4,0-.7,0-1.2,0-.3.9-.7,1.8-1,2.8-1.9,5.3-4.8,10-8.9,13.8-3.8,3.5-8.1,5.8-13.2,6.5-4.1.5-6.8-1.2-7.9-5.3-.1-.5-.3-1-.4-1.5-.7-.3-1.1.2-1.5.4-5.8,4-12.4,6.1-19.2,7.2-.9.1-1.8.2-2.7.2-2.1,0-3.2-1.1-3.4-3.1-.2-2.5,0-4.9,1-7.2,2.2-5.1,4.2-10.2,6.3-15.4,2.5-6.2,4.9-12.5,7.4-18.8.2-.5.3-1,.6-2h0ZM166.2,78.4c-1.3.9-1.9,2.1-2.8,3.1-1.8,2.3-3.6,4.6-4.6,7.3-1,2.5-1.9,5.1-2.7,7.7-.5,1.6-.9,3.2-.7,4.8,0,.5.3.9.5,1.4,3.2,0,5.8-1.3,8.2-3.1,4.9-3.7,8-8.6,9.7-14.4,0-.2,0-.5-.1-.9-3-1.2-5.7-3-7.5-6.1h0ZM174.8,76.6c.1-1.3-.4-2.2-1.1-2.9-.1-.1-.6-.2-.7,0-.2.1-.3.5-.2.7.2,1,.7,1.8,2,2.2Z"/><path class="st0" d="M268.8,101.6c.6-.2,1.2-.3,1.6-.5,2.1-1.4,4.3-2.8,6.2-4.4,5.1-4.3,9.1-9.6,11.9-15.8,1.3-2.9,2.8-5.7,4.1-8.6.6-1.4,1.6-2.3,3.1-2.9,1.4-.6,2.8-1.3,4.4-1.3s2.4.8,2,2.4c-.2.9-.6,1.7-1,2.5-2.5,5.3-5.2,10.6-7.7,16-1.5,3.1-2.8,6.3-3.6,9.7-.3,1-.5,1.9-.5,2.9.8.5,1.3,0,1.8-.3,5-2.4,9.7-5.4,13.9-9.1,5.7-4.9,10.6-10.5,14.6-16.8.4-.6.9-1.2,1.2-1.8,1.2-2.7,3.6-4,6.2-5,1.1-.5,2.4-.8,3.4,0,1,.9.7,2.2.3,3.3-.5,1.5-1,2.9-1.6,4.3-1.2,2.8-2.5,5.6-3.8,8.5-.2.4-.3.8-.5,1.2.6.3.8,0,1-.3,2.6-2.6,5.2-5.3,7.9-7.9,2.7-2.6,5.8-4.7,9-6.5,1.1-.6,2.3-1.1,3.5-1.5,3.4-1.1,5.3.6,4.9,4.2-.1.9-.3,1.8-.7,2.6-.9,1.9-1.8,3.8-2.8,5.6-1.9,3.6-4,7.1-5.9,10.8-1.1,2.2-1.9,4.5-2.8,6.8-.3.8-.3,1.8-.4,2.7,0,.6.5,1.1,1.1,1,.9-.1,1.8-.3,2.6-.6,2.4-1,4.9-2.1,7.2-3.3,3.2-1.7,6.3-3.6,9.4-5.5,1.2-.7,2-1.7,2.6-3,2.5-5.4,5.4-10.5,8.7-15.4,1.5-2.3,3.4-4.2,5.7-5.8,1.6-1.1,3.3-1.8,5.2-2.2,5.5-1,10.8,2.9,11.2,9.1,0,1.4-.3,2.7-1,3.9-1.5,2.6-3.5,4.6-6.2,6-4.4,2.4-8.8,4.7-13.2,7.1-.7.4-1.4.8-2.2,1.1-1.3.6-2.3,1.3-2.3,3s.4,3.7,2.2,4.7c.8.4,1.7.7,2.6.8.9.2,1.8.1,2.7.1,13,0,26,0,39,.2,15.1,0,30.2.2,45.3.3,6.5,0,13.1,0,19.6,0,2.3,0,4.5,0,6.8.2.6,0,1.3.2,1.9.3.8.3,1.1,1.3.5,2-1.2,1.3-2.5,2.4-4.4,2.4-.5,0-.9,0-1.4,0-20.8,0-41.6.2-62.5.2-6.8,0-13.6,0-20.5,0-9.2,0-18.4,0-27.5.1-1.4,0-2.7-.1-4-.4-3.8-.7-6.4-2.9-7.4-6.8,0-.3-.2-.7-.3-1,0,0-.1-.2-.3-.4-.5.2-1.1.4-1.6.7-3.7,1.9-7.4,3.9-11.2,5.7-1.9.9-3.9,1.4-5.9,2-1.6.5-3.2.3-4.8-.3-2.6-.9-4.1-2.7-4.3-5.4-.3-2.8,0-5.4,1.1-8,1.2-2.8,2.4-5.7,3.6-8.5.3-.7.6-1.5,1.1-2.8-1,.7-1.5.9-1.9,1.3-3.4,3.4-6.9,6.7-10.2,10.2-3.4,3.6-6.6,7.2-9.9,10.9-1.8,2-4,2.7-6.5,3.1-1.6.2-2.6-1-2.2-2.6.2-.7.5-1.4.8-2,1-2.5,2.1-5,3.1-7.5.2-.5.4-1,.5-1.4-.5-.4-.7,0-1,.2-2.7,2.2-5.4,4.4-8.1,6.4-4.4,3.3-9.5,5.3-14.9,6.5-1,.2-2,.3-3,.3-2,0-3.1-1-3.2-2.9-.1-1.3,0-2.7.1-4.1,0-.4,0-.8,0-1.6-1,.6-1.6,1-2.3,1.4-2.8,2-5.8,3.8-8.9,5.2-1.9.9-3.9,1.6-5.9,2.1-2.2.5-4.5-1.1-4.5-3.5,0-2.3.2-4.6,1-6.7,1.4-3.7,2.8-7.3,4.3-10.9,7-17.4,14-34.9,21-52.3,4.2-10.4,8.4-20.7,12.5-31.1C300,1.5,302.6.6,305.5,0c1.3-.3,2,.6,2.1,1.9,0,1.1-.4,2.1-.8,3.1-2.9,7-5.8,13.9-8.7,20.9-10,24.2-19.5,48.5-28.6,73.1-.3.7-.7,1.4-.6,2.5h0ZM371.3,87.5c.9-.3,1.3-.3,1.6-.5,2.7-1.3,5.3-2.7,8-4,.9-.5,1.8-1,2.5-1.7.8-.8,1.6-1.7,2.2-2.7,1-1.7.4-2.9-1.4-3.6-1.1-.4-2.1-.4-3.1.2-.7.4-1.3,1-1.9,1.5-3.2,2.9-5.3,6.6-7.9,10.8h0Z"/><path class="st0" d="M56.5,57.3c.9,1,1.7,1.9,2.6,2.9.2.2,1.7,1.9,1.2,2.7,0,0,0,.1-.1.2-44.3.5-49.2,6.6-49.7,9.6-1.6,8.8,31.4,21.5,52.2,26.3,7.6,1.7,26.1,6.2,29.7,0,1.9-3.3-1.2-8.4-2.9-11.2-20.4-32.6-42.8-45.2-40.7-57.2,3-17,55.8-14.3,59.3-12.8.2,0,.7.3.8.8.3,1.3-3.4,3.3-6.9,4.9-16.4-.2-38.5-.4-41,7.5-1.5,4.8,3.6,9.2,16.3,24.3,16,19,33.5,39.7,28.8,48.9-6.3,12.2-49.3.9-52,.2C30.8,97.9-1.9,82.8,0,71.6c2.4-13.4,50.3-14.3,56.4-14.4Z"/><path class="st0" d="M300.8,64.3c-2,.2-3.8-2.3-3.6-4.5.2-1.9,1.6-3.5,3.6-4,1.8-.4,3.9.5,4.9,2.2.5.8.6,1.7.3,2.6-.6,2-3,3.8-5.2,3.7h0Z"/><path class="st0" d="M144.3,63.5h.1-.1Z"/></g></g></g></svg>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ THE QUESTION ═══════════════ -->
+<div class="page">
+
+  <div class="section-heading">The Key Question</div>
+  <div class="section-subtitle">Before we choose the structure, we must answer this first</div>
+
+  <div class="content-block">
+    <p>Albert, thank you for your email exploring the Gospel of John framework. That&rsquo;s extremely helpful to continue understanding your vision for this project!</p>
+    <p>As we continue building the plan, I want to step back and ask a critical question that determines everything else:</p>
+  </div>
+
+  <div class="callout-box" style="margin-top: 0;">
+    <span class="callout-label">The Question every reader is asking</span>
+    <p><strong>Why is this book worth my time?</strong></p>
+  </div>
+
+  <div class="content-block">
+    <p>This is the question every reader is asking. The answer has to be specific. It has to name who the book is for and what it gives them that they cannot easily get somewhere else.</p>
+    <p>What&rsquo;s the answer?</p>
+    <p>It must be something God has uniquely equipped you to share, or the answer will be unconvincing to readers. For example, God&rsquo;s faithfulness is beautiful, but it&rsquo;s also so broad almost every Christian book ever written falls under that category.</p>
+    <p>What experiences, opportunities, lessons, and talents has God uniquely entrusted to you to share?</p>
+  </div>
+
+  <div class="scripture" style="margin-top: 0;">
+    &ldquo;Write the vision and make it plain on tablets, so that those who read it may run with it.&rdquo;
+    <span class="ref">Habakkuk 2:2</span>
+  </div>
+
+  <div class="content-block">
+    <p>Habakkuk 2:2 tells exactly what we are doing. A leader struggling with a discouraged team could spend years searching scripture, testing ideas, and finding what works. Or, they could just read your book. We are making it plain so those who read it don&rsquo;t have to keep &ldquo;looking&rdquo;&mdash;instead, they can run with it where God has called them.</p>
+    <p>That means being focused and specific.</p>
+    <p>Below are three specific directions. Each one answers the question differently, for a different reader, with a different structure. All three honor your story and your faith. The difference is focus.</p>
+  </div>
+</div>
+
+<!-- ═══════════════ OPTION 1 ═══════════════ -->
+<div class="page">
+
+
+  <div class="option-header">
+    <div class="option-num" style="color: var(--purple);">Option 1</div>
+    <div class="option-title" style="color: var(--dark);">Leading with Hope</div>
+    <div class="option-subtitle">How do I let the hope of Christ shine in my organization?</div>
+  </div>
+
+  <div class="percent-bar">
+    <div class="seg" style="width: 20%; background: #8B9DC3;"></div>
+    <div class="seg" style="width: 80%; background: var(--purple);"></div>
+  </div>
+  <div class="percent-labels">
+    <span style="width: 20%;">20% Personal &amp; Spiritual Growth</span>
+    <span style="width: 80%;">80% Actionable Christ-Centered Leadership</span>
+  </div>
+
+  <div class="worth-box">
+    <span class="worth-label">Why is this book worth reading?</span>
+    <p>Because you are a leader who wants to build God&rsquo;s kingdom through your organization, but hope has eroded around you. People are tired. Culture is drifting. You want to reflect the hope of Christ in your leadership but don&rsquo;t know how. Albert Gray led Bethany Children&rsquo;s for decades with exactly this conviction, and this book distills what he learned into something you can act on.</p>
+  </div>
+
+  <div class="detail-row">
+    <div class="detail-label">Target Reader</div>
+    <p>Christian CEOs, nonprofit leaders, and organizational leaders who want to lead with Christ-centered hope but are facing discouragement, drift, or burnout in their teams.</p>
+  </div>
+
+  <div class="detail-row">
+    <div class="detail-label">What the Book Looks Like</div>
+    <p>Six focused chapters, each addressing a distinct leadership challenge through the lens of eternal hope:</p>
+    <ul>
+      <li><strong>Stepping into the Room</strong> &mdash; how hope shapes the way a leader enters every situation</li>
+      <li><strong>Leadership by Walking Around</strong> &mdash; the daily practice of presence and attention</li>
+      <li><strong>Multiplying Hope</strong> &mdash; hiring, developing, and empowering people who carry the mission</li>
+      <li><strong>Culture Built by Character</strong> &mdash; building culture through the character of the people you bring in</li>
+      <li><strong>Unashamedly Faith Forward</strong> &mdash; leading with open faith in secular and professional contexts</li>
+      <li><strong>Hope that Endures</strong> &mdash; guarding against mission drift and sustaining conviction across decades</li>
+    </ul>
+    <p style="margin-top:10px;">Every chapter follows the same rhythm: a driving question, an opening story from Bethany, and a main lesson that answers what to change, why it matters, and how to do it.</p>
+  </div>
+
+  <div class="sr-row">
+    <div class="sr-col strengths">
+      <h4>Strengths</h4>
+      <ul>
+        <li>Extremely rich and valuable for leaders in the thick of responsibilities and looking for help</li>
+        <li>There are ten thousand other books on &ldquo;growing closer to Christ&rdquo; or leadership, but this one is exactly what they&rsquo;re looking for</li>
+        <li>Albert&rsquo;s Bethany stories front and center</li>
+        <li>Clean, tight structure</li>
+      </ul>
+    </div>
+    <div class="sr-col considerations">
+      <h4>Considerations</h4>
+      <ul>
+        <li>Written for leaders, not anyone</li>
+        <li>Staying focused means not everything gets included&mdash;some ideas will need to wait for a future book, but that&rsquo;s a good thing because it creates focus</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="exists-box">
+    This book exists to for high-level, strong-faith leaders who want to be faith-first in their leadership and revive hope in their team but are struggling to figure out how to do so effectively. Albert can help illuminate it.
+  </div>
+</div>
+
+<!-- ═══════════════ OPTION 2 ═══════════════ -->
+<div class="page">
+
+
+  <div class="option-header">
+    <div class="option-num" style="color: var(--gold);">Option 2</div>
+    <div class="option-title" style="color: var(--dark);">Living with Hope</div>
+    <div class="option-subtitle">How do I live a more hope-filled life?</div>
+  </div>
+
+  <div class="percent-bar">
+    <div class="seg" style="width: 100%; background: var(--gold);"></div>
+  </div>
+  <div class="percent-labels">
+    <span style="width: 100%;">100% Personal &amp; Spiritual Growth</span>
+  </div>
+
+  <div class="worth-box">
+    <span class="worth-label">Why is this book worth reading?</span>
+    <p>Because you want to experience the hope Scripture promises, but it feels distant. Life has worn you down. Albert Gray has walked with Christ for over seventy years and has learned to live inside that hope, not just believe in it. This book walks you through what that looks like, one encounter at a time.</p>
+  </div>
+
+  <div class="detail-row">
+    <div class="detail-label">Target Reader</div>
+    <p>The everyday Christian who feels defeated, spiritually dry, or disconnected from the hope they know they are supposed to have. Not specifically leaders. Anyone wanting a deeper, more hope-filled life.</p>
+  </div>
+
+  <div class="detail-row">
+    <div class="detail-label">What the Book Looks Like</div>
+    <p>This direction draws from your recent thinking about the Gospel of John as a framework. Each chapter centers on an encounter from John&rsquo;s Gospel and pairs it with a personal story from your life, showing how the truth of that passage became real in your experience.</p>
+    <p>The book stays focused on a hope-filled life from beginning to end. No leadership section. Eight to ten chapters, organized around the stages of learning to live in hope: recognizing that something is missing, encountering Christ as the source, learning to trust in hard seasons, and letting that hope reshape how you treat people, face setbacks, and think about legacy.</p>
+  </div>
+
+  <div class="caution-box">
+    <strong style="color: var(--gold); font-style: normal;">A note on structure:</strong> I recommend against the two-halves approach from your email, where the book splits into &ldquo;Encountering Jesus&rdquo; (chapters 1&ndash;10) and &ldquo;Leadership, Mission, and Legacy&rdquo; (chapters 11&ndash;21). That structure risks losing readers on both sides: everyday people will feel confused when the second half of the book pivots to leadership, and leaders looking for help will feel like the first half of the book isn&rsquo;t providing what they&rsquo;re looking for. This option commits fully to the hope-filled life. If a blend of life and leadership growth appeals to you, Option 3 is designed for exactly that.
+  </div>
+
+  <div class="sr-row">
+    <div class="sr-col strengths">
+      <h4>Strengths</h4>
+      <ul>
+        <li>Broadest potential audience (though breadth doesn&rsquo;t always equal depth)</li>
+        <li>Get to cover a broader stroke of spiritual topics that are on your heart</li>
+      </ul>
+    </div>
+    <div class="sr-col considerations">
+      <h4>Considerations</h4>
+      <ul>
+        <li>Harder to differentiate: many personal-growth-through-faith books exist</li>
+        <li>Albert&rsquo;s most distinctive experience is his fifty years at Bethany; a personal growth book may underuse this highly valuable experience</li>
+        <li>Generality is the real danger: if the book speaks to everyone, it may not speak deeply enough to anyone</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="exists-box">
+    This book exists to help tired and discouraged believers rediscover the hope of Christ.
+  </div>
+</div>
+
+<!-- ═══════════════ OPTION 3 ═══════════════ -->
+<div class="page">
+
+
+  <div class="option-header">
+    <div class="option-num" style="color: #4A6741;">Option 3</div>
+    <div class="option-title" style="color: var(--dark);">Becoming a Hope-Filled Leader</div>
+    <div class="option-subtitle">How do I become a more hope-filled leader?</div>
+  </div>
+
+  <div class="percent-bar">
+    <div class="seg" style="width: 50%; background: #8BAF82;"></div>
+    <div class="seg" style="width: 50%; background: #4A6741;"></div>
+  </div>
+  <div class="percent-labels">
+    <span style="width: 50%;">50% Personal &amp; Spiritual Growth through a leadership lens</span>
+    <span style="width: 50%;">50% Actionable Leadership</span>
+  </div>
+
+  <div class="worth-box">
+    <span class="worth-label">Why is this book worth reading?</span>
+    <p>Because you are a leader who wants to reflect Christ in everything you do, but you feel personally stuck. The secular world has shaped your leadership more than you realized. Albert Gray shows you how to become a hope-filled person first, then gives you practical tools for leading with that hope, and finally helps you think about what it looks like to leave a legacy of hope that outlasts you.</p>
+  </div>
+
+  <div class="detail-row">
+    <div class="detail-label">Target Reader</div>
+    <p>Christian leaders at all levels who want to lead like Christ but have let negativity creep in. They feel the gap between their faith and their leadership practice. They want personal transformation and practical tools to help them transform their mindset, leadership style, and organization.</p>
+  </div>
+
+  <div class="detail-row">
+    <div class="detail-label">What the Book Looks Like</div>
+    <p>Three parts, each building on the one before:</p>
+    <ul>
+      <li><strong>Part 1: Becoming a Hope-Filled Leader.</strong> Personal and spiritual formation. Stepping into the room with hope, encountering Christ as the source, learning to carry hope through hard seasons. These chapters prepare the leader from the inside out.</li>
+      <li><strong>Part 2: A Toolbox for Leading with Hope.</strong> Powerful, leadership-specific chapters. Walking around, multiplying hope through your people, building a culture rooted in character.</li>
+      <li><strong>Part 3: A Legacy of Hope.</strong> Mission endurance, staying faithful across decades, and handing off well. Albert&rsquo;s fifty-year arc at Bethany becomes the defining story.</li>
+    </ul>
+    <p style="margin-top:10px;">Every chapter still follows the same rhythm: invite the reader into the driving question or tension, use a story from scripture or Albert&rsquo;s career to illustrate what it looks like, and then unpack the main lesson to give the reader something they can act on.</p>
+  </div>
+
+  <div class="sr-row">
+    <div class="sr-col strengths">
+      <h4>Strengths</h4>
+      <ul>
+        <li>Allows Albert to integrate a broader stroke of the ideas on his heart</li>
+        <li>Includes more personal growth alongside leadership growth</li>
+        <li>More focused and specifically valuable than Option 2 by keeping the leadership lens</li>
+        <li>Clear progression: become the person, learn the skills, build the legacy</li>
+      </ul>
+    </div>
+    <div class="sr-col considerations">
+      <h4>Considerations</h4>
+      <ul>
+        <li>More philosophical content at the beginning than Option 1, so high-level leaders drowning in responsibilities and reaching for help might decide it&rsquo;s not what they need before they reach the actionable strategies in the second third</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="exists-box">
+    This book exists for leaders at all levels looking to grow personally in their foundation as much as to apply spiritual truths to their leadership practice.
+  </div>
+</div>
+
+<!-- ═══════════════ RECOMMENDATION & CLOSING ═══════════════ -->
+<div class="page">
+
+  <div class="section-heading">My Recommendation</div>
+  <div class="gold-rule"></div>
+
+  <div class="content-block">
+    <p>My encouragement is, rather than asking what book you <em>can</em> write, ask what book has God uniquely equipped you to write. To answer that, look at your story and how God has used you: the unique experiences and opportunities He has given you, the unique skills and talents He has given you, and how you can steward those talents to build up others.</p>
+    <p>What I see is this: there is a multitude of Christian CEOs asking the kind of questions God has uniquely equipped you to offer guidance, inspiration, tools on. You can help them lead their people and serve the world with the hope of Christ. I believe this is your most unique opportunity for this book because of how uniquely it is aligned with how God has prepared you.</p>
+    <p>That is why I believe Option 1 or Option 3 gives us the sharpest answer. Your fifty years at Bethany are what no other author can bring, and that experience is most powerful when it is the center of the book, not the backdrop. Option 1 is the leanest and most focused. Option 3 gives us room for the spiritual depth that matters to you while keeping the book anchored in leadership. The devotional instinct behind Option 2 is valuable and can live inside either path without requiring its own book.</p>
+  </div>
+
+  <div class="gold-rule-full"></div>
+
+  <div class="content-block" style="margin-top:28px;">
+    <p>Looking forward to hearing your thoughts!<br><strong>&mdash; Holden</strong></p>
+  </div>
+</div>
+
+</body>
+</html>
