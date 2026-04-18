@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Key Ideas — Living with Unexplainable Hope</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+  @font-face {
+    font-family: 'Gin';
+    src: url("data:font/otf;base64,T1RUTwAOAIAAAwBgQ0ZGIHykDsUAAApwAAAmt0RTSUcAAAABAABGlAAAAAhHREVGAPsBfQAAMSgAAAAcR1BPUzmZQAQAADFEAAAPDEdTVUIEBgFeAABAUAAAAoxPUy8yZ9SKSgAAAVAAAABgY21hcHMxvFAAAAa8AAADkmdhc3AAAAAQAABC3AAAAAhoZWFkD2eG6gAAAOwAAAA2aGhlYQfBA/cAAAEkAAAAJGhtdHi7KyACAABC5AAAA7BtYXhwAOxQAAAAAUgAAAAGbmFtZVC2XTMAAAGwAAAFCnBvc3T/uAAyAAAKUAAAACAAAQAAAAEAg/FSkPhfDzz1AAMD6AAAAADOQDE4AAAAANv/EL//7P9dBiUEMwAAAAMAAgAAAAAAAAABAAAENP9dAAADwv/s/+sDngABAAAAAAAAAAAAAAAAAAAA7AAAUAAA7AAAAAMB4AGQAAUABAKKAlgAAABLAooCWAAAAV4AMgHIAAAAAAUAAAAAAAAAAAAAAwAAAAAAAAAAAAAAAFVLV04AQAAgImAC7v8GAAAENACjAAAAAQAAAAAC+AL4AAAAIAACAAAAGAEmAAEAAAAAAAAANwAAAAEAAAAAAAEAAwA3AAEAAAAAAAIABwA6AAEAAAAAAAMASwBBAAEAAAAAAAQAAwA3AAEAAAAAAAUAPACMAAEAAAAAAAYACwDIAAEAAAAAAAgAEQDTAAEAAAAAAAkADQDkAAEAAAAAAAsAGgDxAAEAAAAAAAwAEAELAAEAAAAAAA4AMQEbAAMAAQQJAAAAbgFMAAMAAQQJAAEABgG6AAMAAQQJAAIADgHAAAMAAQQJAAMAlgHOAAMAAQQJAAQABgG6AAMAAQQJAAUAeAJkAAMAAQQJAAYAFgLcAAMAAQQJAAgAIgLyAAMAAQQJAAkAGgMUAAMAAQQJAAsANAMuAAMAAQQJAAwAIANiAAMAAQQJAA4AYgOCQ29weXJpZ2h0IKkgMjAxMyBieSBNYXR0b3ggU2h1bGVyLiBBbGwgcmlnaHRzIHJlc2VydmVkLkdpblJlZ3VsYXIxLjAwMjtVS1dOO0dpbi1SZWd1bGFyOjxUa0QtMjUyODgtNWQyYTZkODZlMjQ5ZWYzNmNhYzhkMGJiYmYxM2E4YTZkMmViNDJiOT5WZXJzaW9uIDEuMDAyO1BTIDAwMS4wMDI7aG90Y29udiAxLjAuNzA7bWFrZW90Zi5saWIyLjUuNTgzMjlHaW4tUmVndWxhckhvbGQgRmFzdCBGb3VuZHJ5TWF0dG94IFNodWxlcmh0dHA6Ly9ob2xkZmFzdGZvdW5kcnkuY29taHR0cDovL21hdHRveC5jY2h0dHA6Ly90eXBla2l0LmNvbS9ldWxhcy8wMDAwMDAwMDAwMDAwMDAwNzczNWE2NDQAQwBvAHAAeQByAGkAZwBoAHQAIACpACAAMgAwADEAMwAgAGIAeQAgAE0AYQB0AHQAbwB4ACAAUwBoAHUAbABlAHIALgAgAEEAbABsACAAcgBpAGcAaAB0AHMAIAByAGUAcwBlAHIAdgBlAGQALgBHAGkAbgBSAGUAZwB1AGwAYQByADEALgAwADAAMgA7AFUASwBXAE4AOwBHAGkAbgAtAFIAZQBnAHUAbABhAHIAOgA8AFQAawBEAC0AMgA1ADIAOAA4AC0ANQBkADIAYQA2AGQAOAA2AGUAMgA0ADkAZQBmADMANgBjAGEAYwA4AGQAMABiAGIAYgBmADEAMwBhADgAYQA2AGQAMgBlAGIANAAyAGIAOQA+AFYAZQByAHMAaQBvAG4AIAAxAC4AMAAwADIAOwBQAFMAIAAwADAAMQAuADAAMAAyADsAaABvAHQAYwBvAG4AdgAgADEALgAwAC4ANwAwADsAbQBhAGsAZQBvAHQAZgAuAGwAaQBiADIALgA1AC4ANQA4ADMAMgA5AEcAaQBuAC0AUgBlAGcAdQBsAGEAcgBIAG8AbABkACAARgBhAHMAdAAgAEYAbwB1AG4AZAByAHkATQBhAHQAdABvAHgAIABTAGgAdQBsAGUAcgBoAHQAdABwADoALwAvAGgAbwBsAGQAZgBhAHMAdABmAG8AdQBuAGQAcgB5AC4AYwBvAG0AaAB0AHQAcAA6AC8ALwBtAGEAdAB0AG8AeAAuAGMAYwBoAHQAdABwADoALwAvAHQAeQBwAGUAawBpAHQALgBjAG8AbQAvAGUAdQBsAGEAcwAvADAAMAAwADAAMAAwADAAMAAwADAAMAAwADAAMAAwADAANwA3ADMANQBhADYANAA0AAAAAAADAAAAAwAAABwAAQAAAAACjAADAAEAAAAcAAQCcAAAAEAAQAAFAAAALwA5AH4AowClAKsAsAC0ALgAuwDWAP8BUwFhAXgBkgLHAtoC3CAUIBogHiAgICIgJiAwIDogrCEiIhIiYP//AAAAIAAwADoAoQClAKcArgC0ALYAugC/ANgBUgFgAXgBkgLGAtoC3CATIBggHCAgICIgJiAwIDkgrCEiIhIiYP//AAAAZwAAAAAAJwAAAAAALgAAAAAAAAAAAAAAAP7C/zUAAP4P/g4AAOCrAADgvOCB4IDgpeCF4B7fv97A3nMAAQBAAAAAXADkAAAA5gDuAAAA8AD0APYBJAFyAXQAAAAAAXIAAAAAAXAAAAFwAAAAAAAAAAAAAAAAAAAAAAAAAAAAxgCnAK4AqQDJANQA1wCvALcAuAChANYApQC7AKoAsQCkALAA0QDPANAArADZAAEACQAKAAwADgATABQAFQAWABsAHAAdAB4AHwAhACkAKwAsAC0ALwAwADUANgA3ADgAOwC1AKIAtgDYALIA5wBKAFIAUwBVAFcAXABdAF4AXwBkAGUAZgBnAGgAagByAHQAdQB2AHkAegB/AIAAgQCCAIUAswDaALQAzQCoAMgAywDgAOYA2wCVALwA3wDoAN0A3gCrAOQAlgC9AK0ABQACAAMABwAEAAYACAALABIADwAQABEAGgAXABgAGQANACAAJQAiACMAJwAkACYANAAxADIAMwA5ACoAeABOAEsATABQAE0ATwBRAFQAWwBYAFkAWgBjAGAAYQBiAFYAaQBuAGsAbABwAG0AzgBvAH4AewB8AH0AgwBzAIQAKABxAC4AdwDlAOMAuwC5AMEAwgDAAAABBgAAAAAAAAAAAAAAxgAAAMYAAAAAAAAAAAAAAAAAAAAAAADGp66pydTXr7e4odalu6qxl5iZmpucnZ6foKSw0c/QrNkBCQoMDhMUFRYbHB0eHyEpKywtLzA1Njc4O7Wittiy50pSU1VXXF1eX2RlZmdoanJ0dXZ5en+AgYKFs9q0zQAEBgsPICQzS05MTVBPVFhbWVpgY2FiaWtubG1we354fdzdyMvgo95439vh4ubTCCYAAAAAzAAAAAAAAJWWAFFvragAAMcAALy9pgAFBycocbq5wcLDxM4AhDoAyr6/AAAAq8XA1QMQAhESFxgZGiIjACUxMjQA5eroAADp5AAA4wAAAAMAAAAAAAD/tQAyAAAAAAAAAAAAAAAAAAAAAAAAAAABAAQCAAEBAQxHaW4tUmVndWxhcgABAQEr+BEA+DsB+DwC+BgEd/s3HQAABiX6xwUdAAAKsQ+cHQAAHlYSHQAADD4RACICAAEABwASACIAMAA7AEUAUABWAFwAYgBoAG4AdAB/AIUAkACgAK4AuQDDAM4A1ADaAOAA5gDsAPIA/QEMARABGAEcAVUBX0Euc3MwMUFhY3V0ZS5zczAxQWNpcmN1bWZsZXguc3MwMUFkaWVyZXNpcy5zczAxQWdyYXZlLnNzMDFBcmluZy5zczAxQXRpbGRlLnNzMDFCLnNzMDFILnNzMDFQLnNzMDFRLnNzMDFSLnNzMDFTLnNzMDFTY2Fyb24uc3MwMWEuc3MwMWFhY3V0ZS5zczAxYWNpcmN1bWZsZXguc3MwMWFkaWVyZXNpcy5zczAxYWdyYXZlLnNzMDFhcmluZy5zczAxYXRpbGRlLnNzMDFiLnNzMDFoLnNzMDFwLnNzMDFxLnNzMDFyLnNzMDFzLnNzMDFzY2Fyb24uc3MwMWdlcm1hbmRibHMuc3MwMUV1cm9ub3RlcXVhbGxvZ29Db3B5cmlnaHQgwqkgMjAxMyBieSBNYXR0b3ggU2h1bGVyLiBBbGwgcmlnaHRzIHJlc2VydmVkLkdpbiBSZWd1bGFyAKQCAAEANABLAGQAbQB4AIEAhwCLAJAAlwCcAKcAswC/AMUA3ADiAOcA9AD4AQkBGQEfAW4BcwGAAZABmAGfAakBzQHXAg8CPgJDAnICdwJ8AoECiQKRApsCzQLcAuIDEgMWAz4DQwN4A6MDtgO6A8UDzwPeA+IEEQQWBBoEJAQoBEYETgRUBHgEfASABIgEnQSvBLUEuQS9BMQE4gTpBPAE9wT7BP8FBAUKBSMFKAUsBUsFVAVZBYIFiAWSBZgFnAWgBbcFvgXEBcgF3wXlBekF8AX0BfcF/QYCBgYGCwYTBiUGLQYxBj0GQgZGBk0GUQZbBm4GdQZ5BowGlwaeBqIGpwa2Br0GwQbFBswG0QbVBtkG3gbiBu0G8Ab0BvkG/QcCBwwHEwcYBx0HIgcmByoHMAc6B0AHSgdQB1QHWAdfB2QHaQdtB3IHdwd7Ffsw+S2ZtwX7QQaZX/swJR2n9whwHfcRBpp8p/sIgG0nHfvC98AVvPeHvPuHf4AFQQYOonwd+1dbHfc4JQr3MSkdm1sFXR1aBQ4V+zMGTQopkQr4zkId/RyrHYkKygX5HAcOFSgd95EGWgoLB3x9BSosHc1uCgv9LXJYJx2AqQsV+SsmCg4zCgYL+5GwCgsHLQr8EAYL+5ExHQuceh34cX0d7iwKC5EKvQebu3wKmYQKC1wKzQapqAXPB7QdCzoKzyoKC3X4Ivq1FUX7IkeyCkbQSmgK9wT8fSMKNgpZcQoLBktMCgv6XhUuHe8WOgrOKgoLBjYdC/cjLR3vFn8K0CoK9wT+KyAd98xECqnACm16Cved/l4gClQdWnsFC/eX+Iv3FBWHj4f3RZOTKAqAlof3OS0K/BwGj1/7vP0raFfCCgaJqb33B6CcBfcLBpV/BSUHe1oF+BAGonwd++v3NxVEBoKW4/doBftuBw73kV0KC/cAMgo5swr34f3VIB33CGMKz6YdO0kK97v9ryAddfhD+MwiCg51+EP4zCMKevcTMQrj+2YiHXD3sPeEFSsdy0wF1waxYwVWB1ZVwHu7qaqzBcAHY7MF74YdDvrHFUiBCrKsHQv3Q6EKwcMF9Qf3TnEVpNucCpdp+wX9GXM6wgoGga4F+yf5PRWobqIKqAX4SvyIpR1UBSK2HfQHC/hO9xQVYh33NCUK9zV9HfdWBr98dPcgBfy/sAr4vwahfB379IoVKQqafQX8cQcOB5tXCgu09wubHd9hsJ2fs6trd1FjYQVHBje2Y3gFl/3YFfgoB/dM/FhpCvwoB/tM+FlwCpkFYx0LB0xFCgv9K8EdC18d90H+lCAdXx33Qf6UIAr3bz8d92f+cCAKdML5TxX9EAd7TJ0K97QHSsvMygX3cGUK+wqTHSZMgJYF9xMlFftSUgr3EQeamvDIBQ568GMK0KYdOkkK96M1Ih1CCnu7BQt091gWhwr3dX0dtAaVf8H7eYBcwgoGd75U94G1Hffudx33MPgyFYcd91JpHe2wHQ4GaB0LfML5WxX9K24d95UHZx37lQd8WwX3M4QdmloF+41SCveNB5u8fgoGDk4dRh0LfML5ThWoCvdidQrwyJaABfuiB3xOJx17yAX5EQebyb0KTQX7WJMdJ05/lwX3mAebyX4KBg5t+AD5jBX7kAZKTArMTAW7ZwpKnB3MfR27BstgHfsTOxWYHX2ZBfhxlR0O+5GUoR1/Cs4qCu8WhQpU/i4mHbxYHQt6908/Hfdg+6siHWz3fT8K0vvPIQprCoAFegdXVgVcB9q3wAt7dR0L9zH4dvh5FfxJB3tbBfcxjwr7IQb7K/vs+yv37AX7IScKe7sF+EkH9wP7nwXbBg5pHesGCwZiHQsF96WXCk0Fex0Lfh17C2KkHfd0mwr373cd9zEGe/hAFfdSB5qZBeywHSoGDveVXwpJ1wULygX5DwcLbPe8+xQV9xcGTPcUysoF+Q+nHctMBfcOBlH3IRX4cZMKmB0OfJoFC+x0Cgt4HcLDBfUHC7SkHfgyB/dM/GJpCvwyB/tM+GNwCpSofgoGqEH3HP0Uf12/Cn+5C3Ad7GcKC5taBQt1CgULevhX+YwiHXTAuwp+HX28HfkPch33IfsgFZqaBeyvCioGfJoFDp732fedJAoGWngKtAoLwR33MYoKC28KBguamgULB7dfBQuGCvvgBgsV+wX7jvcF+41fX/sz941ft7e39zP3jgULB1+3BQszCgcLcPhO+YwV/CsGdPsiv0Qd/M4He0wd+M6MHeoGwX0FDgdLyQX74FAdCwUhgB0LWfg+9yMVV3wF+1kG94b4jwX3EfwCB3P7IsGZBfdYBvuE/IyZHff/Bw5bBVqCCgv9EQd7TsIKBnsL9yNXfAULB3AdC/0rBwta+E73IRVXfQX7VpEK+M4HmqMd+BAGDgfDUwXzBgsGU/sQBQuTHQUL9z34iBVACmEGgJYFnAfAwQW5BzuaCguPCvszBguafQULXQr3FbIdC3yZBQssCg6rCimKHQsGfZoFCxUwCgsHmZkFC2z4APmMIx0LB03LqB37E2Md/W9vCvsUtQoOwrsKXR1aBQsF+zMLFVp7BfwlbR34JaodB0zJBQsHfHwL+scVSYEKC5QKBgv43BVACjMGMAoLlsAdRQdubgVHBm6oBdEHqKgFC/oAFZzGtLQF0QYLwR33MooKC8rKBQsHe0IKCwZ4+wNwPCcdf66m9y8FC1l4Cr2bBQv6XhULBfeSC7wF+zFQHQv3SLsVC7sdUwv7IgULkh0qHQsF+0QL+JwV9zOKCvcUBwu/HQ4HyUwLnDOmCgv7kQYLB0tmCgsHe1rCCgZ7vAULdAr7UkMKCzAKtQYLB5u7BQt9BSkGC22pBQvLywULgB3BwwULB4OEBVsGg5IFC/cDFjgdCxUiBlNVBSEHwwsHe1onHQ4VIwYLWp0KC7ucCptbBQsGTE0FCwa8ewULFaUKCwd7WwULB8tLBQsF0AYLAQAiAACrBQCKAAAjAQCxAAAlAACaAAAmAACyAwAnAwC2AwArBAC6AAAwAAC7AwCNAAC/AACOAAAxAACdAAAyAgDAAAA1AQDBAwA3AwDFAQA7AAGHDQBCAADIBQCQAABDAQDOAABFAACnAABGAADPAwBHAwDTAwBLBADXAABQAADYAwCTAADcAACUAABRAACiAABSAgDdAACVAABVAQDeAwBXAwDiAQBbAAGVDgCLAACPAAARCQALAAA9AAB0AAAbAAANAAB5AAACAABgAAAEAAAPAAByAAAgAAB7AAADAABoAAAcAAAQAABAAABcAABeAAA8AAA+AAAJAQCJAABvAAAOAABqAAB4AABrAQB2AABpAAB3AABBAAAIAAB1AAABAABlAABhAAAFAAGkAABiAABkAABfAACfAAAeAQAdAACmAAGlAAAGAAB6AAAMAAAHAAA/AAAhAABdAACqAABwAAChAABzAAClAABmAACZAAB9AACIAACFAAB+AACDAAB8AACAAACEAAB/AAGmAADsAgABAE0AUgBUAFYAWABaAFwAXgBgAGIAZABmAGgAagBwAHwAlgCgAKwArgCwALIAtAC2ALgAugC8AL4AwADCAMQAxgDIAMoAzADOANAA0gDUANYA2gDcAN4A4ADiAOQA5gDoAOoA7ADuAPAA8gD0APYA+AD6APwA/gEAAQUBBwEJAQsBDQEPAREBEwEVARcBGQEbAR0BHwEkASYBKAEqASwBLgEwATIBNAE2ATgBOgE8AUIBTgFoAXIBfgGAAYIBhAGGAYgBigGMAY4BkAGSAZQBlgGYAZoBnAGeAaABogGkAaYBqAGsAa4BsAGyAbQBtgG4Ae8B8QHzAfUB9wH5AfsB/QH/AgECAwIFAgcCCQIOAhACEgIUAhYCGAIaAhwCHgIgAiICJAImAigCawKuAuQC5gL+AzUDdQOQA7kD6QQMBFcEhgS1BM8E0QTdBOIE9AUUBTUFdAV7BX0FsgXyBgcGDAYfBjoGQAZlBncGhQaeBrAGugbMBtMG5wb0BwAHCQcRBy0HRQdhB2YHawdwB3MHuwgaCGwIxAkLCUQJYwm0CeMKAAoeCjAKeQqACrEK0AseCz0LkAueDBMMMgxFDGwM3g0vDY8Nkw2lDb0N0A3cDecOAg4ODigQPIaLvfjsvQGLvfgkvQOLBPiI+VD8iAb3jvvFFfs+95MF9+gG+yD7wBX3PveTBfySB/wGXhX3PveT9z77kwX8Bvi/Ffc++5P7PvuTBQ74fr4gHUcdOh00HUcKNAo5HTcdRgpTCj4dax1LClr4NxYhHVr3cT8K9x7+xxUhHVrc+eIVzvci0MEK0EbOph08SQr3l/3iFSEdWvYyHdj+XhUhHVr3TD8d90P+oxUhHWIKTwpPHYwKcgphClMddgpqClkKfx1ZHWUdQx04ClYdSgo8ClQKZApICvdaQR1eHVAKUh1NHTsdLgp2HWodVQpLHT0dVR15ClEKWwpsHVgKPQp5Hfh+viAKSB07CjUKSR01HTkKSh1RHV4KYR1OCjwdLx34fr4gHUcdOh00HUcKNAo5HTcdRgpTCj4dax1LClr4NxYhHVr3cT8K9x7+xxUhHVrc+eIVzvci0MEK0EbOph08SQr3l/3iFSEdWvYyHdj+XhUhHVr3TD8d90P+oxUhHWIKTwpPHYwKcgphClMddgpqClkKfx1ZHWUdQx04ClYdSgo8ClQKZApICvdZQR1eHVAKUh1NHTsdLgr4XfhD+MwiCvhiuxX3FpId+5MGS00F+9LCHfdDZwr7NEMKKywdy0wF95NdCvfRRR3rdApZcQoOdh1qHVUKSx09HVUdeQpRClsKbB1YCj0KeR34fr4gCkgdOwo1CkkdNR05CkodUR1eCmEdTgo8HS8dtaQd+NB9HfdAZwr7NYIdPAZYeAq+mwXadAr7NkMKPwZVmaP7IQX3S6QK95AHS8q1HfeUhgr72wZNTQX9HsEd9zEGDvt29335bhW0HfsnBn9FqpMF4waTgwVbB4OEBTMGbGsF+xMHqm0F9zwGgakFTeMVWrcdvAeTkgW7BtH7kBXK+1FMBw77dvd/+HAV95IHa6kF+xMGa20F+5IHq20F9xMGa/eIFftEtx33RAeTkwW7BtP8DxXK+1NMBw44Cvt992m8Fflb+yQHXfsyBbsGmXwF/K66HX74WPeEFfszBpt6Hfcymwr30AdLywX7kacKebsFvWkd7gaZfQX7NJgK+0QGTEwF/BD4EPdUBw5k9/f5jBX7kgZNSwX7FG4dvTYK+zSCHU4GWHgKvpsFyGcK+zJSCryyHfsxBpuECslLiQrLBfeQB0vLugr3kQcOgPhGvBX5Kq0K+5FSCveRB5qjCvvfsQr7kLodfvhI+MwV91T8EPwQoAq1Cpl8lgoHfXwFKI0K99AHS0UK7gaZfQVZuQp197CpHUzLBa0dS0sF/QzCHfeRBsrLBffQRR3uBpl9BVkH+58E+zKCCvcyfR3uBg48+C/5DBV69xQF++8Gc/siwJkF918G+3j8z2dOBbUKfbgFDm34AvmMFfuSBkpLBfuNqx1NTAX7lQfMS5IKycsF95UHTcrJygX3jQf7Ez0V+zAHiR33MJUdmfvbFfs4B32zHX2ZBfc4B5maBe0GDnX4CPmMFfuRvgr70AfKSwX3QmcK+zIHfHwFKo0K+QwH+xQ9Ffs0Ugr3NOkd7AYOUveb+MIV9zCkbub7I0Sl9zEFKgal+zH7ItJtMfcycfsE+wTXUdT3ItP7ItrFBQ77U7T5PBVx2wX3MgZ/afcG/RmjOnwKlq4FDo4K+5Tc+PI3CjP7oj4K+5RWCg73atz3RDcK9ycWKwr3JxYrCg77hfdn+YwV+zJOHfupB577dQXjBp73dQX3qQcg/Ks+CvuF90SWHWj83BX3MgZ7vAX3qQd493UFMwZ4+3UF+6kHDve9+VL4UBU2HVmfCvsvnwr7HW0d9wcGdfsTBS5tHdOfHfcxnx33CTMdLAah9xMF+yv7ExX7MAah9xMF9zAGDvuU3PdEPgqOCmj4APmMFfuTpwp8uwW9Wh2ZfZAdmAo7vh37AgeeTAXjBp3KBappHd0GycwF984H+538nD4KaPfJlh37B/zcFfeTBsrLrAoHm7u9ClsFWUMKKwZ9mXUdmZoF2wbKyQX3Agd4ygUzBnlMBWxDCjkGTUoF+84HDjyaHfcJFm5uvfunBbgGv/enbagFDvuxmh0O+5Tc+PI3CjP7olcdvwX3OHQdDvtT96f5PBWj23wKlmn7A/0ZcToF9zIGf64FDt34s5uRHfs+9xz7FBX3RPcUKlsd+W9pHez3E/tEvgr8FAdRUMVQBfwVBw77PveZSxX4FQfGxlDGBfgUjh37XLf7FBX3g54K+4MGDvtc95n7FBX6i/uC+xPsB4Ud/W9vCvsUBg77XPb7FBX3RJ4K+0S+Cv4LBw77XPeZSxX6C44d91v5KPhfFVp7BfyabR34mqod3fiz+F+RHWj4PvhfFVl7BfuvbR33rwa9ewUOhPeo+QpzHfeAX3MdDoTU+TZzCveAt3MKDvtc96j5CnMdDvtc1Pk2cwoOaFYK9xgWsR2WgAV6B1ZWBVwH2rfBwAX3N3QdDmiDHffJFkAKYAaAlgWcB8HBBbkHOpoKDmiDCvcYFrEdloEFeQdWVwVbB9q3wcEF9zZ0HQ77lIMdDvuUgwoO+5RWCg77nQ6O90f5ThVn+4N7fAVLBlybdvsztArLBpp9ZPuSdFonHYK8sPeSmpkFywa6e6D3M1p7BUoGf5qh9zWbmgXwBr98ifcgBftmBg5s98H3kxVZB319BWUGqvgRBZIGmX0FWAd6TB33FAdMygVCBpDJBVYGhk0F+xMGS0wF/JIHy00F1QaGTAXABpDKBfcSBsrJBfcWB5u7nAor+wQVhx339WkdsgZs/BEFDnj3t6kdS8sFWVsdqgebowpsgh1bBktLBfvOB8tKBfdDBpl9Bfs0B4kdvAebu3wKmoQKy0sFu2cKbZwdqX0dvaoK99KGCvtFBn2aBfczkwpZBw6q93n4LxX3kwaaxgX7ovcqBnAd7QaZfAVZB3tMHfcUkh37kwZNTQX7eDsHfFAF6lA7BnxQBer7egbJTAX3k4Yd+zMGm1sFWpgKKVsd9yr3dgeaxgX7hQYOlPhE9xQV+4AGg5Po9zuamQXLBrtYHVupCvc1fR33HAa/fHP3IAX7hb4d+4OCHUsGW3gKu5sFywaafSr7Q5kd+CUHo/cjBQ6e+HP5VBUvCvcA+8UF+xZQ9ysGn1AF+z9R90X7QwZ7WwX3LwZ9uwX3Q/dDxfs9B5/GBfcpxvsUBg77Jaj31RWdxrSzwx3eYbKfnbGta3dRYWEFSQY3swoO9wT3/vlwuR1TBfQGwMMF9QdClbYKSLgK96H7eRVNewX77gZMeArKmwX37gbJewX7SlK5HVQF9AbAwgX1B0KVFahgCm5uBUgGbagFzwepqQUOovhb+N8VTHsF+5QGTHgKypsF95QGynsFKwRMewX7lAZMm34KB8qbBfeUBsp7BQ4xzvmzFfen/Au3X19f+6f8C1e/92z4A/ts+AQFDjH4JPmAFftc/AT3XPwDWVf7qfgLX7e3t/ep+AsFDqL4W/hfFVp7BfuvBqAd96+qHWj3uPhQFd8GvVgdWXsFVAa09z0FMgZj+z0F+yBtHfcDBm77FAU5BlqbfgoHtArBBmP7PwXjBrP3PwX3IQa9e8IKB1l7BfsFBg7lQB1Clx0O9/BAHfdfwrsdVFQFIgfCUwXzBsLDBfQH+9+XHffZFpkKRQdtbgVJBm2oBdEHqagFDqL4KvhQFTzZBpu9fAqbWQU9PQegHdk+rgrY2gdUHQ6B+ET4UBX7kwZ9mgX3M4wd7nQKWZ4debusCgdNywX7kr4K+5AHyk1MSgX7kQfKS5IKycsF95GbB7tYHftR+zEV+zSCHSiKHfc0jB3uBg73IfjQ+JYV+433BfuO+wVft/eO9zK3t7df9437MgUO98X5Zhb8gYod+O+MHff1Bpl9BfwSmApnWx33hgduqAX7VgZubgX71welCvfzBsrJBfiRkh38kL4d/Y6gCvi/Bvvi+AAV9zR9Ha9nCvs0gh1nBg77lvdPOxX6K60K/iu5Cvdr9/wW+973UgX4EAf33vdS9977UgX8EAf86a8V95/7Lfef9y0F98cH+5/3Lvuf+y4F9zL75BX4AQewsAX3JgavZgVCB5RvBTAGlacFqAeCkwVTBoKDBfunB5SDBcMGlJMFqAeBpgXmBoJwBUAHZ2cF+yYGDkr3/vjjFTz3DAabowr7DD0HoB3Z/DOuCvgz2gdUHQ77fPdRoQrCwwX1B0KVtgpHuAoO9135GjsV+asHm7wF/M6+HfvSsQr8EQd7TB35UAeZmgXbZwr9ULkKIPdb+EoV+0fyBfdiB/dH8vdGJAX7Ygf7154V9yU49yTeBfc7B/sk3/slNwXg+14VkJoF92MHhpoF8wafeAX7AAd3d5xBkXsFWgaPmnrSiI8FfgaHhgVFB5B8Ban3FRWQkAXGB4aQBWwGh4YFUAePhgUOePgG+NwV+0YGfpkF9yiTClkHfUwd9xaGCvuSBktNBfzbwh33QwaZfAX7KQeJHbwHm7x8CppaBfsTB8tLiQrLBfjdB/sVOxX7DgeJHfcOlR0OMfdD+V8VeZAFbgaHhgX7RwePfQVaBpCZBfdHB4aQBWwGe4aSuKwKBvca+0UVbgZm4AX7GAeQfQVaBo+ZBfdkB4ebBbcGv/sMvvcMBbcGh3sF+2QHj30FWQaRmQX3GAcOpF8dDtj4R/q1FUb7IkWyCkfQSWgKDmj3SRa1YgVXB1VVwXu5qauzBb8HYrQFDtj3J3cKmQbRRs+mHTuACnmBHQ7d90ShHYUK7hYuHQ6k92mUHbKcMqYKDvc++KT6PxVuqAX71wZubgVIB6UK99cGqKgFDo73x0QKqG2iCqkFDuX3J5sd3mGxnZ6zrGt3UWJhBUgGN7ZieAUO+sr4bPh2FfuV96r7Yf2M92H3qfeV+6n3YvmM+2IG99P9jBX3Yvep96j3Yfuo1PgG92H81Ab5bl8VnaKZcZ26OXarBhz6w4wVSEdHzwX46xZGR0fPBfnMFkBEBfv7BkTSBXx9FdRCBfyyB0JABfiq+L0VSNDOzgUc+t2KFdNDBfyyB0NBBfc5+UQV+4kHQ0UF94YH+AXUFdNDBfuHB0PRBfc6/E8VQtUF+LIH1NMF+f37IxWknKKio3qgcnF4eHFwnnilH9AEl5WBfn6BgX99gZWYmJWVmR/8sEEVQ9MF9+UG1kMF/D77OxX3cwfSRAU4B/jnfxWhYAeAf4yZmJeMlh+2oF0GgIGKhIMfhIOJgIMagY2AkoQeg5OVipYb/mM/FfwxBtTTBfegBvmNFj5DBfuIBtTTBfea+yoVR8/PzgX3gFsVvQZZYwV23aBYjAe+sgWgOQcc+wH7DhVC0wX4MQZDQwX4lRZC0wX3iQbXQwX+qPuZFUPVBfeFB9NEBfe9FtPSBfuGB0NBBfh4jRVE1AX3hQfSRQX4lXUVdJ15oqKdnaIeqTkHnXcVuYUGfYOCfHuElZgeefsBFaqKBmx3BXAHrKUFf46UhZcbnJOYmx+qOQe4dxWgiQaDioSBgoqSkx4c+i/7GBXPzs5IBffbFs/O0EgF90oWz87PSAX4o6oVdbIHtm0FpQd0mqKaBaUHYG0FDh6gN/8MCYsMC/ifFPiNFZwTAKQCAAEANABBAGIAgACWAJ8ApwCtALQAvADGAM0A2wDnAP8BFgEdASQBPQFBAVEBYgFnAWsBcgF/AYUBlQGfAakBrAG8AcMBzgHSAdcB4gHpAhICHAIrAjECSQKCAogCjwK+At0C+gMjAykDNwNCA00DWQNfA2wDnQOhA+ED5gPqBAsEGAQcBDsEVQRcBHoEhASKBI8EnwSoBM8E1ATXBOEE5gTqBO8E9AT/BRgFHAUgBSoFNAU5BUcFTAVSBVYFWQVdBWMFaQVvBXUFjQWRBZcFnAWgBasFrwWzBboFwQXRBdgF3QXhBeUF6QXvBfMF9wX7Bf8GAwYHBhAGFwYbBiEGLQY9BkIGSgZRBlgGXAZgBmQGbQZyBngGfAaABoQGjQaYBp8GpQasBrEGtga6Br4GxgbMBtUG2AbcBuAG5QbpBu4G8wb4Bv0HAQcEFfsv+S2YtwX7QgaZX/svJR2k9wKdnfcEv5x5svs2gG0nHfvC988Vuvd4tPtafoBMbQUOIx37FDsV/HFDCikKDkEK+9IHzUsF90JnCvs0JB330QdMygX7RAZ8mgX3NDAdC0EK+64HzUv3QlCFHfseJB33rAdMy/tExocd9x5sChX3LvhLLwr3L/xLBfttwR33LwZ9wwoHmpkoCnyaBQsHm6Md9zEGC1Ad9zEGCwXLMx1LBgsrkQr4cVodCwaoqAXPB26pBQswCuMGQAoLBpl8BVkHekwd9xSnHQtwHfdXBr98dPcgBft1+CL6tRVF+yJHsgpG0EpoCvcE/H0iCg6wwwX7TwadbTb7qzb3q52pBftPBrBTC19fBTNxHQstHfEWLh0L+gAVnsaztMMd32GxnZ+zq2t4UWJhBUYGCwX3Mwv3zEQKqcAKbXoK953+XiAd9yMtHe8WfwrQKgr3BP4rIAoHmkQdCxUrCgts+AD5jCEK9wAyCjmzCvfh/dUgCm1gCpkKC/cIYwrPph07SQr3u/2vIApsY/cLMh2V+2YhCp73JTEKUv1VJAo3Cg76oxUz+0eyevdE9zBIzwULt7cF43QdCxX3FpIdtR1JTQULWycdCwd8fQUL+r2lHVRkHUGWFQtmCvc0aR0LdI8d9+AGy8oF95gHSsvMyhr3jGUK+zC3CvcT+zAV+zoSCvc5fR3sBg73bz8d92f+cCAdbOcyCSe2Y3gF93P7ECEKgAp6gR0LbOf55hXP9yLP0AULm5AdBwuA+FyICvxwL/hwZh0FDm0KqQULlB2xrB0Llgr4H+NgHU3JBfviBvcj+yAVmZoF668KK4od9zSMHbv3E1uKHQ5NBf0PBwtoHfzOQwoLdPe0FvcyBnfLTPe109NcHcgF90d1CvuolIC6+2gFhPgiFSZNgJYF92g2CvsmBw50uB33ugebvQX7Ygan+xQFr/sdBokd+HEHmZoF7YgdYqQd6Wkd90SkCvfTrh3qJgp7974V9zQHZx28Cg73yfmciAr8YC/4U5a1nAqWYTD8UzD4YGYd3/hK4vxKf10F99EGf7kFDm8dfJoFC3D3Axb3kYYd+zMGKx0ObPdXewr3AfurIQp695E/Cvce+88iHdz3RFcdwAX3N3QdC7x+Ck4dC573pV8KStcFgv2+JAqs+KYWXcf7NPga9yT3jbvIBftGBpV1+zz7vwX3pEId/SqvHfcrB8v3A/cH+6qAagUOymAdC4D3zvgRFfca996xvAX7SAaaa0H7S0H3S5qrBftIBrFa9xr73vsa++BlWgX3SQZ5qtf3T9f7T3lsBfdJBmW8BQ6hHToKCwadHQti90jIFfdHdQr3RPcBy8lcHfgzFfdfNgr7HQd8fSZNBQ76oxUz+0exevdE9zALkAoHC/uRepniFc33ItHQBZkG0UbNph09gAp5gR33FP2yJh1awvlcFf0rrx33kmkdywa7WB1bqQr3NSkdDncKmgbQRguNHfuCSRXNBjv8BAX39gf3Avx/FUcG3vgPBfwBBw5yHfci+yAVZx0LyqgdWx0LBpp8BQv3IgXZBsL7EQWcBsX3EQULBfcjhB2bWgULZPeg+YwVm1oF/M63CvcSB5u9fAqbWQX7YKsdBfeTXQr5HAebvAUOFbEdlQswHQ6QCgZuqQXQB6gLTAU4HQuCHSoLBfshfQoHfEIKC/ud9xk/Cn7+lyYdFfcz+463X19f+zP7jV+39wb3jfsG944FCwaFHQsHmpkL+526ewrZ/nMmHfniFc/3Is/QBQubkB0HC4D4XIgK/HAw+HBmHQUObQqpBQuUHbGsHQuWCgYLJwoOBfsxC25gCqUKCwZT9xAFCz/3RPswC5gKKFsdC9z5uGsKgQV5B1dXBVsH2rfAwQX3NnQdC1uVCgt/Cs8qCgsHS8kFC3u7BQv5QxWp1JwKlm4wC5IKywsGhwoL+SsHm7wFC/ui90i7Jh1bHbwHnb0d+xSgCveRqgoL+5Tc+Gg+CooKiwoLbQVHCwaHHQuiHQYLlR2ZfQULjB3tC5kdBwsF+zILch2bCgerCgupbgULX1dXBfs4cR0LfR33RKoKC5AdBgsF9+CkCgv3FCmKHflvlAr3EwsGnvcDo9l+CgaVaXH7LwULB8pLBQv5jKUdVXgdCwVGB25tCgu8BfsyTh0LBroKC6huBQv3RwULBkxLBfsUnh0Lex3IBQt7BUtbHQsGtR0LfXwFCwX3FAsHm7wF+zNOHQsGe1oF9zIGe7wFC2cK/HGCHQsxHctMBQugCvdEZwoLRgV8Bgu2YXgFC7ybBQv3RAYLwB1GB25tBQtDCiqRCgsGtB3QB6moBQueHQ7LygUL+VwVC/s0bx0LnAqaCwZMSwULBfdCBgttBUYHC9AFmgYLBfcxC7sFDgAAAQAAAAwAAAAAAAAAAgACAAEAlgABAOIA6gADAAEAAAAKADYAdAACREZMVAAObGF0bgAcAAQAAAAA//8AAgAAAAIABAAAAAD//wADAAEAAwAEAAVjcHNwACBjcHNwACZrZXJuACxrZXJuADJtYXJrADgAAAABAAAAAAABAAAAAAABAAEAAAABAAEAAAABAAIAAwAIABAAGgABAAAAAQAaAAIAAAACABwFugAEAAAAAQi4AAEKygAFAAUACgABCsoABAAAACcAWABqAHwAjgCgALIAxADWAUgBugJEArYCvAMuA0ADUgNkA3YDiAOaA6wDsgPEA9YD6AP6BAwEHgQwBKIFFAUaBSwFPgVQBWIFdAWGBZgABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kAHAAB//EAAv/xAAP/8QAE//EABf/xAAb/8QAH//EAPP/xAD3/8QA+//EAP//xAED/8QBB//EAQv/xAEr/8QBL//EATP/xAE3/8QBO//EAT//xAFD/8QCG//EAh//xAIj/8QCJ//EAiv/xAIv/8QCM//EAHAAB/+kAAv/pAAP/6QAE/+kABf/pAAb/6QAH/+kAPP/pAD3/6QA+/+kAP//pAED/6QBB/+kAQv/pAEr/6QBL/+kATP/pAE3/6QBO/+kAT//pAFD/6QCG/+kAh//pAIj/6QCJ/+kAiv/pAIv/6QCM/+kAIgAB//EAAv/xAAP/8QAE//EABf/xAAb/8QAH//EAOP/sADn/7AA6/+wAPP/xAD3/8QA+//EAP//xAED/8QBB//EAQv/xAEr/8QBL//EATP/xAE3/8QBO//EAT//xAFD/8QCC/+wAg//sAIT/7ACG//EAh//xAIj/8QCJ//EAiv/xAIv/8QCM//EAHAAB/+kAAv/pAAP/6QAE/+kABf/pAAb/6QAH/+kAPP/pAD3/6QA+/+kAP//pAED/6QBB/+kAQv/pAEr/6QBL/+kATP/pAE3/6QBO/+kAT//pAFD/6QCG/+kAh//pAIj/6QCJ/+kAiv/pAIv/6QCM/+kAAQBK/+kAHAAB//EAAv/xAAP/8QAE//EABf/xAAb/8QAH//EAPP/xAD3/8QA+//EAP//xAED/8QBB//EAQv/xAEr/8QBL//EATP/xAE3/8QBO//EAT//xAFD/8QCG//EAh//xAIj/8QCJ//EAiv/xAIv/8QCM//EABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kAAQBK/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kAHAAB//EAAv/xAAP/8QAE//EABf/xAAb/8QAH//EAPP/xAD3/8QA+//EAP//xAED/8QBB//EAQv/xAEr/8QBL//EATP/xAE3/8QBO//EAT//xAFD/8QCG//EAh//xAIj/8QCJ//EAiv/xAIv/8QCM//EAAQBK/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kABAAK//EAFP/xACv/8QAt/+kAAQBK/+kAAgV+AAQAAAaYB84AEwAUAAD/r/+Z/7f/xQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/xAAAAAAAA/+z/8QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/6QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/9sAAP98/7cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+o/4v/vQAAAAAAAP/jAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/qP+L/70AAAAAAAD/4wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/7X/X/+LAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/5wAAP/F/9T/i/+3/7cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/xAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/nAAA/+P/qAAA/6//qP/x//H/6f/x//EAAAAAAAAAAAAAAAAAAAAA/+wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/1AAAAAAAAAAAAAD/8QAAAAAAAAAAAAAAAAAA/+kAAAAAAAD/7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/nAAA/5kAAAAAAAD/xQAAAAAAAAAA/+z/7P/sAAAAAP+3AAAAAAAAAAAAAP+LAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/iwAA") format("opentype");
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --gold: #C98F23;
+    --cream: #F7F7F5;
+    --dark: #0E0A04;
+    --text: #000000;
+    --text-light: #666;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: var(--text);
+    background: var(--cream);
+    line-height: 1.6;
+    font-size: 15px;
+  }
+
+  .page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .page-inner {
+    width: 100%;
+    max-width: 800px;
+    padding: 80px 40px;
+  }
+
+  /* COVER */
+  .cover {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(ellipse at 30% 40%, rgba(201,143,35,0.05) 0%, transparent 60%);
+  }
+  .cover-content {
+    position: relative;
+    z-index: 1;
+    padding: 80px 40px;
+  }
+  .cover h1 {
+    font-family: 'Gin', serif;
+    font-weight: 900;
+    font-size: 42px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    line-height: 1.2;
+  }
+  .cover .subtitle {
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.45);
+    margin-bottom: 24px;
+  }
+  .cover .tagline {
+    font-size: 16px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 60px;
+  }
+  .cover .cover-meta {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+    line-height: 2;
+  }
+
+  /* INTRO */
+  .intro {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .intro h2 {
+    font-family: 'Gin', serif;
+    font-size: 28px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .intro p {
+    font-size: 14.5px;
+    color: var(--text-light);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  .gold-rule { width: 40px; height: 1px; background: var(--gold); margin: 24px auto; }
+
+  /* IDEA CARD */
+  .idea-card {
+    margin-bottom: 48px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid rgba(201,143,35,0.2);
+  }
+  .idea-card:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .idea-num {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 8px;
+  }
+  .idea-title {
+    font-family: 'Gin', serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    line-height: 1.3;
+  }
+  .idea-description {
+    font-size: 14.5px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .question-block {
+    border-left: 3px solid var(--gold);
+    padding: 16px 20px;
+    background: rgba(201,143,35,0.05);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 12px;
+  }
+  .question-label {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--gold);
+    margin-bottom: 6px;
+  }
+  .question-block p {
+    font-size: 14px;
+    line-height: 1.6;
+    font-style: italic;
+    color: #444;
+    margin: 0;
+  }
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-light);
+    border-top: 1px solid rgba(201,143,35,0.2);
+    margin-top: 40px;
+  }
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="cover">
+  <div class="cover-content">
+    <div class="subtitle">Albert Gray Book Project</div>
+    <h1>Living with<br>Unexplainable Hope</h1>
+    <div class="tagline">Key Ideas for Discussion</div>
+    <div class="cover-meta">
+      Prepared by Storyline Creative<br>
+      Session 2 Working Document &mdash; April 2026
+    </div>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="page">
+  <div class="page-inner">
+
+    <div class="intro">
+      <h2>How Do You Live With Hope?</h2>
+      <div class="gold-rule"></div>
+      <p>Below are 18 key ideas drawn from your recent writing and speaking. Each one connects to the core focus of the book: living with unexplainable hope. For each idea, there are two questions: one asking for a story, and one asking for a lesson. Your answers will shape the chapters.</p>
+    </div>
+
+    <!-- 1 -->
+    <div class="idea-card">
+      <div class="idea-num">Idea 01</div>
+      <div class="idea-title">Iron Sharpens Iron</div>
+      <p class="idea-description">Embracing the sharpening of friends, peers, and mentors to break off negativity and cynicism and build us up in Christ with hope and optimism.</p>
+      <div class="question-block">
+        <span class="question-label">Story</span>
+        <p>Who sharpened you the most, and what did they say or do that cut deep enough to change you?</p>
+      </div>
+      <div class="question-block">
+        <span class="question-label">Lesson</span>
+        <p>How do you find and embrace sharp iron instead of surrounding yourself with people who only tell you what you want to hear?</p>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="idea-card">
+      <div class="idea-num">Idea 02</div>
+      <div class="idea-title">Love God, Love People</div>
+      <p class="idea-description">Choosing our outward expression to God and others as love, even when we don't feel like it, transforms our inward selves.</p>
+      <div class="question-block">
+        <span class="question-label">Story</span>
+        <p>Tell me about a time you chose to love someone when everything in you wanted to be angry or bitter. What happened?</p>
+      </div>
+      <div class="question-block">
+        <span class="question-label">Lesson</span>
+        <p>How does choosing love when you don't feel it actually change who you are on the inside?</p>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="idea-card">
+      <div class="idea-num">Idea 03</div>
+      <div class="idea-title">Do Your Best as Unto the Lord</div>
+      <p class="idea-description">Treating every task, small, invisible, or thankless, as an offering to God fills even mundane work with meaning and hope.</p>
+      <div class="question-block">
+        <span class="question-label">Story</span>
+        <p>Tell me about someone at Bethany who did invisible, thankless work as if God Himself were watching. What did their faithfulness look like?</p>
+      </div>
+      <div class="question-block">
+        <span class="question-label">Lesson</span>
+        <p>How do you keep giving your best when no one notices and nothing seems to change?</p>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="idea-card">
+      <div class="idea-num">Idea 04</div>
+      <div class="idea-title">Do What You're Supposed to Be Doing</div>
+      <p class="idea-description">Trusting that God has prepared specific good works for your life in advance gives you a purpose that circumstances can't take away.</p>
+      <div class="question-block">
+        <span class="question-label">Story</span>
+        <p>When did you discover what God had prepared for you to do? Was there a moment it became clear, or did it unfold slowly?</p>
+      </div>
+      <div class="question-block">
+        <span class="question-label">Lesson</span>
+        <p>How do you keep doing what you're supposed to be doing when it's hard and the results aren't visible?</p>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="idea-card">
+      <div class="idea-num">Idea 05</div>
+      <div class="idea-title">Grace Before Works</div>
+      <p class="idea-description">Knowing that your salvation is a gift, not something you earn, frees you from the performance trap and anchors your hope in what Christ has done, not what you've accomplished.</p>
+      <div class="question-block">
+        <span class="question-label">Story</span>
+        <p>When did you catch yourself working to earn God's love instead of working because you already had it? What was happening in your life?</p>
+      </div>
+      <div class="question-block">
+        <span class="question-label">Lesson</span>
+        <p>How does understanding grace change the way you work and the way you measure success?</p>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="idea-card">
+      <div class="idea-num">Idea 06</div>
+      <div class="idea-title">Sacred Trust</div>
+      <p class="idea-description">Recognizing that what you've been given, a job, a ministry, a family, a calling, is not yours but God's changes how you carry it, from burden to privilege.</p>
+      <div class="question-block">
+        <span class="question-label">Story</span>
+        <p>When did Bethany stop being a job and start being a sacred trust? What was the moment you felt the weight of it?</p>
+      </div>
+      <div class="question-block">
+        <span class="question-label">Lesson</span>
+        <p>How do you carry responsibility as a trust from God instead of a weight on your shoulders?</p>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="idea-card">
+      <div class="idea-num">Idea 07</div>
+      <div class="idea-title">Obedience Before a Plan</div>
+      <p class="idea-description">Stepping into what God calls you to before you have the resources, the strategy, or the certainty builds a life of faith that produces hope others can see.</p>
+      <div class="question-block">
+        <span class="question-label">Story</span>
+        <p>When did you obey God without a plan? What did you step into, and what did He do after you stepped?</p>
+      </div>
+      <div class="question-block">
+        <span class="question-label">Lesson</span>
+        <p>What have you learned about the relationship between obedience and hope?</p>
+      </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="idea-card">
+      <div class="idea-num">Idea 08</div>
+      <div class="idea-title">One Life Impacts Another</div>
+      <p class="idea-description">Living with hope is contagious. The faith of one person overflows to the people around them and to generations after them, which means your hopefulness today is producing fruit you may never see.</p>
+      <div class="question-block">
+        <span class="question-label">Story</span>
+        <p>Whose faith infected yours? Tell me about the person whose hope overflowed into your life and changed how you see the world.</p>
+      </div>
+      <div class="question-block">
+        <span class="question-label">Lesson</span>
+        <p>How does knowing your hope is overflowing to others change how you live today?</p>
+      </div>
+    </div>
+
+    <!-- 9 -->
+    <div class="idea-card">
+      <div class="idea-num">Idea 09</div>
+      <div class="idea-title">God Provides</div>
+      <p class="idea-description">Choosing to trust God for provision rather than relying solely on your own effort opens the door to provision you couldn't have engineered yourself.</p>
+      <div class="question-block">
+        <span class="question-label">Story</span>
+        <p>Tell me about a time God provided something you couldn't have made happen on your own. What were the specifics?</p>
+      </div>
+      <div class="question-block">
+        <span class="question-label">Lesson</span>
+        <p>What did that provision teach you about trust that you couldn't have learned any other way?</p>
+      </div>
+    </div>
+
+    <!-- 10 -->
+    <div class="idea-card">
+      <div class="idea-num">Idea 10</div>
+      <div class="idea-title">When Nothing Makes Sense, Stay</div>
+      <p class="idea-description">The decision to stay with Jesus when life doesn't make sense, when the crowd leaves, when the answers don't come, when the logical move is to quit, is the defining act of hope.</p>
+      <div class="question-block">
+        <span class="question-label">Story</span>
+        <p>When did you stay when everything in you wanted to leave? What were you facing, and what happened because you stayed?</p>
+      </div>
+      <div class="question-block">
+        <span class="question-label">Lesson</span>
+        <p>What does staying teach you about hope that leaving never could?</p>
+      </div>
+    </div>
+
+    <!-- 11 -->
+    <div class="idea-card">
+      <div class="idea-num">Idea 11</div>
+      <div class="idea-title">Follow for Who He Is, Not What He Does</div>
+      <p class="idea-description">People who follow Jesus only for what He gives them will leave when He asks something hard, but people who follow Him for who He is find a hope that outlasts any circumstance.</p>
+      <div class="question-block">
+        <span class="question-label">Story</span>
+        <p>When did you have to choose between following Jesus for His blessings and following Him for Himself? What did that moment look like?</p>
+      </div>
+      <div class="question-block">
+        <span class="question-label">Lesson</span>
+        <p>What's the difference between a hope built on circumstances and a hope built on the person of Christ?</p>
+      </div>
+    </div>
+
+    <!-- 12 -->
+    <div class="idea-card">
+      <div class="idea-num">Idea 12</div>
+      <div class="idea-title">Faith Is Tested in the Unknown</div>
+      <p class="idea-description">Sickness, loss, and unanswered prayer are not signs that God has abandoned you. They're the proving ground where hope either becomes real or stays theoretical.</p>
+      <div class="question-block">
+        <span class="question-label">Story</span>
+        <p>Tell me about a time your faith was tested by something you couldn't explain or fix. What happened?</p>
+      </div>
+      <div class="question-block">
+        <span class="question-label">Lesson</span>
+        <p>How did that test make your hope real instead of just something you believed in?</p>
+      </div>
+    </div>
+
+    <!-- 13 -->
+    <div class="idea-card">
+      <div class="idea-num">Idea 13</div>
+      <div class="idea-title">"I Don't Understand, But I'm Not Leaving"</div>
+      <p class="idea-description">Peter's answer to Jesus, "Where else would we go?", is the prayer of anyone who has decided that hope in Christ is the only option, even when nothing else makes sense.</p>
+      <div class="question-block">
+        <span class="question-label">Story</span>
+        <p>When did you pray that prayer literally? What were you facing, and what were you refusing to walk away from?</p>
+      </div>
+      <div class="question-block">
+        <span class="question-label">Lesson</span>
+        <p>What did staying through confusion teach you about who God is?</p>
+      </div>
+    </div>
+
+    <!-- 14 -->
+    <div class="idea-card">
+      <div class="idea-num">Idea 14</div>
+      <div class="idea-title">Abide, Don't Strive</div>
+      <p class="idea-description">The secret to sustaining hope over decades is not working harder but staying connected to Christ. Apart from the vine, even the most driven person produces nothing that lasts.</p>
+      <div class="question-block">
+        <span class="question-label">Story</span>
+        <p>When did you try to bear fruit on your own and burn out? What was happening, and what brought you back to abiding?</p>
+      </div>
+      <div class="question-block">
+        <span class="question-label">Lesson</span>
+        <p>What does abiding look like in your daily life, and what happens when you stop?</p>
+      </div>
+    </div>
+
+    <!-- 15 -->
+    <div class="idea-card">
+      <div class="idea-num">Idea 15</div>
+      <div class="idea-title">You Are an Instrument, Not the Source</div>
+      <p class="idea-description">The moment you realize that God is the one doing the work through you, and you couldn't perform what He has done, is the moment pride dies and unexplainable hope is born.</p>
+      <div class="question-block">
+        <span class="question-label">Story</span>
+        <p>When did you realize you were the instrument and not the source? What happened that made it undeniable?</p>
+      </div>
+      <div class="question-block">
+        <span class="question-label">Lesson</span>
+        <p>How did that realization change the way you lead and the way you pray?</p>
+      </div>
+    </div>
+
+    <!-- 16 -->
+    <div class="idea-card">
+      <div class="idea-num">Idea 16</div>
+      <div class="idea-title">Greatest Lessons Come Through Struggles</div>
+      <p class="idea-description">The storms and failures in your life are not the enemy of hope. They're the classroom where hope is forged, because you learn that God is faithful even when everything falls apart.</p>
+      <div class="question-block">
+        <span class="question-label">Story</span>
+        <p>What's the hardest season you've been through? What were you facing, and what did it feel like?</p>
+      </div>
+      <div class="question-block">
+        <span class="question-label">Lesson</span>
+        <p>What did you learn about God in that season that you couldn't have learned any other way?</p>
+      </div>
+    </div>
+
+    <!-- 17 -->
+    <div class="idea-card">
+      <div class="idea-num">Idea 17</div>
+      <div class="idea-title">No One Outlives Their Usefulness to God</div>
+      <p class="idea-description">The lie that you're too old, too tired, or past your prime is the enemy of hope. God has purpose for you as long as you have breath.</p>
+      <div class="question-block">
+        <span class="question-label">Story</span>
+        <p>Have you ever believed the lie that you've outlived your usefulness? What was happening, and what pulled you out of it?</p>
+      </div>
+      <div class="question-block">
+        <span class="question-label">Lesson</span>
+        <p>What would you say to someone who believes that lie right now?</p>
+      </div>
+    </div>
+
+    <!-- 18 -->
+    <div class="idea-card">
+      <div class="idea-num">Idea 18</div>
+      <div class="idea-title">Little Is Much When God Is in It</div>
+      <p class="idea-description">The small, unknown, overlooked place you're called to is exactly where God wants to do something significant, and believing that is the definition of living with unexplainable hope.</p>
+      <div class="question-block">
+        <span class="question-label">Story</span>
+        <p>Why do you want to start at the 40-member church in Western Oklahoma instead of the big stage? What have you seen God do in small places?</p>
+      </div>
+      <div class="question-block">
+        <span class="question-label">Lesson</span>
+        <p>What have you learned about God in small places that you never learned in big ones?</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      Storyline Creative &mdash; Albert Gray Book Project &mdash; April 2026
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
