@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hope-Empowered Leadership — Albert Gray Book Project</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --gold: #C98F23;
+    --purple: #2321AF;
+    --cream: #F7F7F5;
+    --dark: #0E0A04;
+    --text: #000000;
+    --text-light: #666;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: var(--text);
+    background: var(--cream);
+    line-height: 1.6;
+    font-size: 15px;
+  }
+
+  .page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .page-inner {
+    width: 100%;
+    max-width: 1000px;
+    padding: 80px;
+  }
+
+  /* ── COVER ── */
+  .cover {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(ellipse at 30% 40%, rgba(201,143,35,0.08) 0%, transparent 60%);
+  }
+  .cover-content {
+    position: relative;
+    z-index: 1;
+    padding: 80px;
+    max-width: 900px;
+  }
+  .cover .subtitle {
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 32px;
+  }
+  .cover h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 56px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    line-height: 1.1;
+  }
+  .cover .cover-rule {
+    width: 60px;
+    height: 1px;
+    background: var(--gold);
+    margin: 32px auto;
+    opacity: 0.8;
+  }
+  .cover .thesis {
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.85);
+    font-style: italic;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .cover .tagline {
+    font-size: 13px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-top: 56px;
+  }
+  .cover .cover-meta {
+    margin-top: 12px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+  }
+  .logo-area {
+    margin-top: 48px;
+    opacity: 0.85;
+    display: flex;
+    justify-content: center;
+  }
+  .logo-area svg { width: 140px; height: auto; fill: #ffffff; }
+  .logo-area svg path { fill: #ffffff !important; }
+
+  /* ── HEADINGS ── */
+  .section-heading {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .section-subtitle {
+    text-align: center;
+    font-style: italic;
+    color: var(--text-light);
+    font-size: 14px;
+    margin-bottom: 48px;
+  }
+
+  .gold-rule { width: 40px; height: 1px; background: var(--gold); margin: 24px auto; }
+
+  /* ── UMBRELLA SECTION ── */
+  .umbrella-section {
+    background: white;
+    border: 1px solid rgba(0,0,0,0.05);
+    border-radius: 4px;
+    padding: 56px 64px;
+    margin-bottom: 56px;
+    text-align: center;
+  }
+  .umbrella-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+  }
+  .umbrella-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 42px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    line-height: 1.1;
+  }
+  .umbrella-thesis {
+    font-size: 17px;
+    line-height: 1.65;
+    color: var(--text);
+    max-width: 620px;
+    margin: 0 auto;
+    font-style: italic;
+  }
+  .umbrella-thesis .mission-lead {
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--purple);
+  }
+
+  /* ── FACETS INTRO ── */
+  .facets-intro {
+    text-align: center;
+    margin-top: 96px;
+    margin-bottom: 48px;
+  }
+  .facets-intro .label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--text-light);
+    margin-bottom: 8px;
+  }
+  .facets-intro h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  /* ── FACET GRID ── */
+  .facet-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 56px;
+  }
+  .facet-card {
+    background: white;
+    border: 1px solid rgba(0,0,0,0.06);
+    border-top: 3px solid var(--gold);
+    border-radius: 2px;
+    padding: 36px 32px;
+    position: relative;
+    transition: transform 0.2s ease;
+  }
+  .facet-card .facet-num {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 14px;
+    color: var(--gold);
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+  }
+  .facet-card .facet-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 28px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .facet-card .facet-rule {
+    width: 30px;
+    height: 1px;
+    background: var(--gold);
+    margin-bottom: 16px;
+  }
+  .facet-card .facet-body {
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--text);
+  }
+
+  /* Alternate facet accent colors for visual rhythm */
+  .facet-card:nth-child(2) { border-top-color: var(--purple); }
+  .facet-card:nth-child(2) .facet-num,
+  .facet-card:nth-child(2) .facet-rule { background: var(--purple); color: var(--purple); }
+  .facet-card:nth-child(2) .facet-num { background: none; }
+
+  .facet-card:nth-child(3) { border-top-color: var(--purple); }
+  .facet-card:nth-child(3) .facet-num,
+  .facet-card:nth-child(3) .facet-rule { background: var(--purple); color: var(--purple); }
+  .facet-card:nth-child(3) .facet-num { background: none; }
+
+  /* ── CLOSING CALLOUT ── */
+  .closing-block {
+    background: var(--dark);
+    color: white;
+    border-radius: 4px;
+    padding: 48px 56px;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .closing-block .closing-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+  }
+  .closing-block .closing-body {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    max-width: 640px;
+    margin: 0 auto;
+    color: white;
+  }
+  .closing-block .closing-rule {
+    width: 40px;
+    height: 1px;
+    background: var(--gold);
+    margin: 24px auto;
+    opacity: 0.7;
+  }
+
+  .footer-meta {
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-light);
+    padding-bottom: 48px;
+  }
+  .footer-meta .gold-dot {
+    color: var(--gold);
+    margin: 0 10px;
+  }
+
+  /* ── STATUS GRID (Where We're At) ── */
+  .status-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+  .status-card {
+    background: white;
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: 0 4px 4px 0;
+    padding: 28px 32px;
+  }
+  .status-card-gold { border-left: 3px solid var(--gold); }
+  .status-card-purple { border-left: 3px solid var(--purple); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    body { font-size: 14.5px; }
+    .page-inner { padding: 40px 20px; }
+    .cover-content { padding: 48px 20px; }
+    .cover h1 { font-size: 36px; letter-spacing: 2px; }
+    .cover .subtitle { font-size: 11px; letter-spacing: 2px; }
+    .cover .thesis { font-size: 15px; }
+    .cover .tagline { font-size: 11px; letter-spacing: 3px; margin-top: 40px; }
+    .cover .cover-meta { font-size: 10px; letter-spacing: 1.5px; }
+    .section-heading { font-size: 24px; letter-spacing: 2px; }
+    .section-subtitle { font-size: 13px; margin-bottom: 32px; }
+    .umbrella-section { padding: 36px 24px; }
+    .umbrella-title { font-size: 28px; letter-spacing: 1.5px; }
+    .umbrella-thesis { font-size: 15px; }
+    .umbrella-label { font-size: 10px; letter-spacing: 2px; }
+    .facets-intro { margin-top: 64px; margin-bottom: 32px; }
+    .facets-intro h2 { font-size: 24px; letter-spacing: 2px; }
+    .facets-intro .label { font-size: 10px; letter-spacing: 2px; }
+    .facet-grid { grid-template-columns: 1fr; gap: 16px; margin-bottom: 40px; }
+    .facet-card { padding: 28px 24px; }
+    .facet-card .facet-title { font-size: 22px; }
+    .facet-card .facet-body { font-size: 14.5px; }
+    .closing-block { padding: 32px 24px; }
+    .closing-block .closing-body { font-size: 17px; }
+    .closing-block .closing-label { font-size: 10px; letter-spacing: 2px; }
+    .status-grid { grid-template-columns: 1fr; gap: 16px; margin-bottom: 32px; }
+    .status-card { padding: 24px 22px; }
+    .footer-meta { font-size: 10px; letter-spacing: 1.5px; }
+  }
+  @media (max-width: 420px) {
+    .page-inner { padding: 32px 16px; }
+    .cover-content { padding: 40px 16px; }
+    .cover h1 { font-size: 30px; letter-spacing: 1.5px; }
+    .umbrella-section { padding: 28px 20px; }
+    .umbrella-title { font-size: 24px; }
+    .status-card { padding: 20px 18px; }
+    .facet-card { padding: 24px 20px; }
+    .closing-block { padding: 28px 20px; }
+    .closing-block .closing-body { font-size: 15px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════ COVER ═══════════════ -->
+<div class="page cover">
+  <div class="cover-content">
+    <div class="subtitle">Albert Gray Book Project &nbsp;·&nbsp; Starting Framework</div>
+    <h1>Hope-Empowered<br>Leadership</h1>
+    <div class="cover-rule"></div>
+    <div class="thesis">
+      To lift up the name of Jesus by showing leaders<br>
+      how hope in Christ shapes the way they lead and live.
+    </div>
+    <div class="tagline">Storyline Creative</div>
+    <div class="cover-meta">A Starting Point to Build From &nbsp;·&nbsp; April 2026</div>
+    <div class="logo-area">
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 488.4 199.6"><g><path fill="#ffffff" d="M169.7,196.9v-27.6l2.8-2.7h11l2.7,2.7v5.6l.7,2.1h-6.9l.7-2.1v-2.2l-.6-.6h-4.3l-.6.6v20.7l.6.6h4.3l.6-.6v-2.1l-.7-2.1h6.9l-.7,2.1v5.6l-2.7,2.7h-11l-2.8-2.7h0Z"/><path fill="#ffffff" d="M190.2,199.6l.7-2.1v-28.8l-.7-2.1h14.4l2.8,2.7v15l-2.8,2.8,2.4,10.3.9,2.2h-6.8l.5-2-2.4-9.9-.4-.5h-1.8l-.6.6v9.8l.7,2.1h-6.8ZM201.2,181.6l.6-.6v-8.3l-.6-.6h-4.3l-.6.6v8.3l.6.6h4.3Z"/><path fill="#ffffff" d="M211.1,199.6l.7-2.1v-28.8l-.7-2.1h16.5l1,6.1-2.3-.6h-8.5l-.6.6v6.8l.6.6h2.8l2.1-.7v6.9l-2.1-.7h-2.8l-.6.6v7.1l.6.6h8.5l2.3-.6-1,6.2h-16.5Z"/><path fill="#ffffff" d="M251.6,199.6h-6.9l.5-1.3-1.2-5-.6-.6h-5.4l-.6.6-1.2,5,.5,1.3h-6.9l1.1-2.2,6.8-28.9-.6-1.9h7.5l-.6,1.9,6.8,28.9,1.1,2.2h0ZM239,187h3.2l.5-.5-2.1-10.6-2.1,10.6.5.5Z"/><path fill="#ffffff" d="M268.7,172.7l-2.4-.6h-4.1l-.6.6v24.8l.7,2.1h-6.9l.7-2.1v-24.8l-.6-.6h-4.2l-2.3.6,1-6.2h17.7l1,6.2h0Z"/><path fill="#ffffff" d="M277.7,199.6h-6.8l.7-2.1v-28.8l-.7-2.1h6.8l-.7,2.1v28.8l.7,2.1Z"/><path fill="#ffffff" d="M293.5,197.6l.5,2h-7.6l.5-2-5.9-27.8-1.3-3.2h6.8l-.4,1.3,4,20.7,4-20.7-.5-1.3h6.9l-1.3,3.2-5.8,27.9h0Z"/><path fill="#ffffff" d="M302.6,199.6l.7-2.1v-28.8l-.7-2.1h16.5l1,6.1-2.3-.6h-8.5l-.6.6v6.8l.6.6h2.8l2.1-.7v6.9l-2.1-.7h-2.8l-.6.6v7.1l.6.6h8.5l2.3-.6-1,6.2h-16.5Z"/><path fill="#ffffff" d="M136.2,63.8c-14.1-.2-27.9.2-41.8,0-1.8-2-3.7-4-5.4-6,.3-.7.8-.6,1.2-.6.4,0,.7,0,1.1,0,14.8,0,29.6-.1,44.5-.2h3.1c.4-.7.8-1.3,1.1-1.9,1.8-4.2,3.6-8.3,5.4-12.5.6-1.3,1.3-2.3,2.6-3,.9-.5,1.7-1,2.6-1.4.5-.2,1-.4,1.5-.5,1.9-.3,2.7.6,2.3,2.5-.2,1-.5,1.9-.9,2.9-1.5,3.9-2.9,7.8-4.4,11.7-.3.7-.5,1.5-.8,2.5,1,0,1.8.1,2.6.1,10.1,0,20.2,0,30.3,0,28,0,56,.1,84,.2.8,0,1.6,0,2.5,0,.7,0,1.4.4,1.6,1.2.2.8,0,1.4-.6,2-1.3,1.3-2.7,1.9-4.6,1.9-7.5,0-14.9,0-22.4,0-14.3.1-28.5.3-42.8.4h-1.4c-10.6,0-21.3,0-31.9.1-6.2,0-12.4.2-18.5.3-.4,0-.9,0-1.5.1-5.1,12.6-10.1,25.3-15,37.9-.1.3-.1.7-.2,1,.3,0,.5.2.6.2,3.4-.9,6.8-2,9.9-3.7,3.1-1.7,5.6-4.1,7.7-6.8.7-.8,1.1-1.9,1.4-2.9,1.4-4,3.3-7.7,5.9-11,1.2-1.6,2.6-3.1,4.1-4.3,1.7-1.5,3.4-3,5.1-4.5,1.1-1,2.3-1.7,3.9-1.2.6.2,1.3,0,1.8-.2,3.7-1.5,7.5.6,9,4.8.4,1,.5,2.1.6,3.2,0,.8,0,1.6,0,2.4,2,1.1,3.8.9,5.5-.2,1.6-1.1,2.9-2.5,3.9-4.1.9-1.5,1.7-3,2.6-4.5,1.3-2.3,2.5-2.7,5-1.7,2.2.9,4.4,1.7,6.8,1.7,2.1,0,4.2-.3,6.1-1.2,1.4-.6,2.9-1.1,4.5-1.1.4,0,.9,0,1.4,0,.9.2,1.5.9,1.3,1.7-.1.8-.4,1.6-.7,2.3-.8,1.6-1.6,3.1-2.4,4.6-4.1,7.2-7.3,14.8-9.5,22.8-.2.7-.3,1.4-.5,2.5.7-.4,1.1-.5,1.3-.8,6.3-5.8,11.6-12.5,15.9-19.9,1.6-2.8,3.1-5.8,4.5-8.7,1.2-2.6,3.5-3.6,5.9-4.3,1.1-.3,2,.3,2.2,1.4.4,1.6.3,3.2-.3,4.8-1.5,3.8-2.6,7.7-3.4,11.8-.9,4.1-1,8.3-1.3,12.4,0,1.1.2,2.2.4,3.2.2.8.8,1.3,1.6,1.2.7,0,1.5-.2,2.1-.6,1.4-.9,2.9-1.9,4.2-3,4.6-3.9,8.4-8.5,11.8-13.5,2.7-4,5.2-8.1,7.3-12.4.7-1.5,1.7-2.6,3.1-3.3,1-.6,2.1-1.1,3.1-1.6.5-.2,1-.3,1.6-.3.9,0,1.6.5,1.7,1.4,0,1-.2,1.9-.3,2.1-.6,1.7-1.5,3.4-1.8,4-2.1,4.1-5.1,10.1-8.4,17.5-1.6,3.6-4.5,10.1-11.8,28.8-2.5,6.4-5.8,15-9.6,25.1-2.3,1.9-7.6,6.1-9.3,4.8-.5-.4-1-1.4,0-4.8,2.3-8.2,4.9-13.3,7.8-19.9,1.2-2.7,2.8-6.9,6.1-15.3.9-2.4,1.7-4.4,2.2-5.8-.4.2-.9.6-1.5,1-2.3,1.5-3.9,2.4-6,3.1-1.6.5-3.2.6-4.8.5-1.9-.1-3.2-1.1-4.3-2.6-.8-1.2-1.3-2.6-1.6-4-.7-3.7-.8-7.4-.3-11.1,0-.4,0-.8,0-1.7-.8.9-1.2,1.5-1.8,2.1-2.8,3.4-5.6,6.9-8.5,10.3-1.6,1.9-3.5,3.4-5.6,4.7-.9.6-1.9,1.1-3,1.3-2.6.7-5.2-.4-6.4-2.8-.5-.9-.8-2.1-.8-3.1,0-1.5,0-3.1.3-4.6,1-5.2,2.6-10.2,5-14.9.9-1.9,1.9-3.7,2.9-5.6.3-.6.5-1.1.8-1.8-3-.6-5.9-.7-8.6-2.4-.5.7-.9,1.2-1.3,1.8-1.5,2.5-3.3,4.8-5.5,6.7-2.7,2.3-5.7,3.9-9.4,3.5-.4,0-.7,0-1.2,0-.3.9-.7,1.8-1,2.8-1.9,5.3-4.8,10-8.9,13.8-3.8,3.5-8.1,5.8-13.2,6.5-4.1.5-6.8-1.2-7.9-5.3-.1-.5-.3-1-.4-1.5-.7-.3-1.1.2-1.5.4-5.8,4-12.4,6.1-19.2,7.2-.9.1-1.8.2-2.7.2-2.1,0-3.2-1.1-3.4-3.1-.2-2.5,0-4.9,1-7.2,2.2-5.1,4.2-10.2,6.3-15.4,2.5-6.2,4.9-12.5,7.4-18.8.2-.5.3-1,.6-2h0ZM166.2,78.4c-1.3.9-1.9,2.1-2.8,3.1-1.8,2.3-3.6,4.6-4.6,7.3-1,2.5-1.9,5.1-2.7,7.7-.5,1.6-.9,3.2-.7,4.8,0,.5.3.9.5,1.4,3.2,0,5.8-1.3,8.2-3.1,4.9-3.7,8-8.6,9.7-14.4,0-.2,0-.5-.1-.9-3-1.2-5.7-3-7.5-6.1h0ZM174.8,76.6c.1-1.3-.4-2.2-1.1-2.9-.1-.1-.6-.2-.7,0-.2.1-.3.5-.2.7.2,1,.7,1.8,2,2.2Z"/><path fill="#ffffff" d="M268.8,101.6c.6-.2,1.2-.3,1.6-.5,2.1-1.4,4.3-2.8,6.2-4.4,5.1-4.3,9.1-9.6,11.9-15.8,1.3-2.9,2.8-5.7,4.1-8.6.6-1.4,1.6-2.3,3.1-2.9,1.4-.6,2.8-1.3,4.4-1.3s2.4.8,2,2.4c-.2.9-.6,1.7-1,2.5-2.5,5.3-5.2,10.6-7.7,16-1.5,3.1-2.8,6.3-3.6,9.7-.3,1-.5,1.9-.5,2.9.8.5,1.3,0,1.8-.3,5-2.4,9.7-5.4,13.9-9.1,5.7-4.9,10.6-10.5,14.6-16.8.4-.6.9-1.2,1.2-1.8,1.2-2.7,3.6-4,6.2-5,1.1-.5,2.4-.8,3.4,0,1,.9.7,2.2.3,3.3-.5,1.5-1,2.9-1.6,4.3-1.2,2.8-2.5,5.6-3.8,8.5-.2.4-.3.8-.5,1.2.6.3.8,0,1-.3,2.6-2.6,5.2-5.3,7.9-7.9,2.7-2.6,5.8-4.7,9-6.5,1.1-.6,2.3-1.1,3.5-1.5,3.4-1.1,5.3.6,4.9,4.2-.1.9-.3,1.8-.7,2.6-.9,1.9-1.8,3.8-2.8,5.6-1.9,3.6-4,7.1-5.9,10.8-1.1,2.2-1.9,4.5-2.8,6.8-.3.8-.3,1.8-.4,2.7,0,.6.5,1.1,1.1,1,.9-.1,1.8-.3,2.6-.6,2.4-1,4.9-2.1,7.2-3.3,3.2-1.7,6.3-3.6,9.4-5.5,1.2-.7,2-1.7,2.6-3,2.5-5.4,5.4-10.5,8.7-15.4,1.5-2.3,3.4-4.2,5.7-5.8,1.6-1.1,3.3-1.8,5.2-2.2,5.5-1,10.8,2.9,11.2,9.1,0,1.4-.3,2.7-1,3.9-1.5,2.6-3.5,4.6-6.2,6-4.4,2.4-8.8,4.7-13.2,7.1-.7.4-1.4.8-2.2,1.1-1.3.6-2.3,1.3-2.3,3s.4,3.7,2.2,4.7c.8.4,1.7.7,2.6.8.9.2,1.8.1,2.7.1,13,0,26,0,39,.2,15.1,0,30.2.2,45.3.3,6.5,0,13.1,0,19.6,0,2.3,0,4.5,0,6.8.2.6,0,1.3.2,1.9.3.8.3,1.1,1.3.5,2-1.2,1.3-2.5,2.4-4.4,2.4-.5,0-.9,0-1.4,0-20.8,0-41.6.2-62.5.2-6.8,0-13.6,0-20.5,0-9.2,0-18.4,0-27.5.1-1.4,0-2.7-.1-4-.4-3.8-.7-6.4-2.9-7.4-6.8,0-.3-.2-.7-.3-1,0,0-.1-.2-.3-.4-.5.2-1.1.4-1.6.7-3.7,1.9-7.4,3.9-11.2,5.7-1.9.9-3.9,1.4-5.9,2-1.6.5-3.2.3-4.8-.3-2.6-.9-4.1-2.7-4.3-5.4-.3-2.8,0-5.4,1.1-8,1.2-2.8,2.4-5.7,3.6-8.5.3-.7.6-1.5,1.1-2.8-1,.7-1.5.9-1.9,1.3-3.4,3.4-6.9,6.7-10.2,10.2-3.4,3.6-6.6,7.2-9.9,10.9-1.8,2-4,2.7-6.5,3.1-1.6.2-2.6-1-2.2-2.6.2-.7.5-1.4.8-2,1-2.5,2.1-5,3.1-7.5.2-.5.4-1,.5-1.4-.5-.4-.7,0-1,.2-2.7,2.2-5.4,4.4-8.1,6.4-4.4,3.3-9.5,5.3-14.9,6.5-1,.2-2,.3-3,.3-2,0-3.1-1-3.2-2.9-.1-1.3,0-2.7.1-4.1,0-.4,0-.8,0-1.6-1,.6-1.6,1-2.3,1.4-2.8,2-5.8,3.8-8.9,5.2-1.9.9-3.9,1.6-5.9,2.1-2.2.5-4.5-1.1-4.5-3.5,0-2.3.2-4.6,1-6.7,1.4-3.7,2.8-7.3,4.3-10.9,7-17.4,14-34.9,21-52.3,4.2-10.4,8.4-20.7,12.5-31.1C300,1.5,302.6.6,305.5,0c1.3-.3,2,.6,2.1,1.9,0,1.1-.4,2.1-.8,3.1-2.9,7-5.8,13.9-8.7,20.9-10,24.2-19.5,48.5-28.6,73.1-.3.7-.7,1.4-.6,2.5h0ZM371.3,87.5c.9-.3,1.3-.3,1.6-.5,2.7-1.3,5.3-2.7,8-4,.9-.5,1.8-1,2.5-1.7.8-.8,1.6-1.7,2.2-2.7,1-1.7.4-2.9-1.4-3.6-1.1-.4-2.1-.4-3.1.2-.7.4-1.3,1-1.9,1.5-3.2,2.9-5.3,6.6-7.9,10.8h0Z"/><path fill="#ffffff" d="M56.5,57.3c.9,1,1.7,1.9,2.6,2.9.2.2,1.7,1.9,1.2,2.7,0,0,0,.1-.1.2-44.3.5-49.2,6.6-49.7,9.6-1.6,8.8,31.4,21.5,52.2,26.3,7.6,1.7,26.1,6.2,29.7,0,1.9-3.3-1.2-8.4-2.9-11.2-20.4-32.6-42.8-45.2-40.7-57.2,3-17,55.8-14.3,59.3-12.8.2,0,.7.3.8.8.3,1.3-3.4,3.3-6.9,4.9-16.4-.2-38.5-.4-41,7.5-1.5,4.8,3.6,9.2,16.3,24.3,16,19,33.5,39.7,28.8,48.9-6.3,12.2-49.3.9-52,.2C30.8,97.9-1.9,82.8,0,71.6c2.4-13.4,50.3-14.3,56.4-14.4Z"/><path fill="#ffffff" d="M300.8,64.3c-2,.2-3.8-2.3-3.6-4.5.2-1.9,1.6-3.5,3.6-4,1.8-.4,3.9.5,4.9,2.2.5.8.6,1.7.3,2.6-.6,2-3,3.8-5.2,3.7h0Z"/></g></svg>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ THE UMBRELLA ═══════════════ -->
+<div class="page">
+  <div class="page-inner">
+
+    <div class="section-heading" style="margin-bottom: 48px;">Topic</div>
+
+    <!-- UMBRELLA -->
+    <div class="umbrella-section">
+      <div class="umbrella-label">The Main Topic</div>
+      <div class="umbrella-title">Hope-Empowered<br>Leadership</div>
+      <div class="gold-rule"></div>
+      <div class="umbrella-thesis">
+        <span class="mission-lead">To lift up the name of Jesus</span><br>
+        by showing leaders how hope in Christ<br>
+        shapes the way they lead and live.
+      </div>
+      <div style="margin-top:28px; font-size:13px; color:var(--text-light); font-style:normal; letter-spacing:0.3px;">
+        Every chapter, every speech, every story we build from here answers to this main topic.
+      </div>
+    </div>
+
+    <!-- FACETS INTRO -->
+    <div class="facets-intro">
+      <h2>Facets</h2>
+    </div>
+
+    <!-- FACETS GRID -->
+    <div class="facet-grid">
+
+      <!-- 1. PRAYER -->
+      <div class="facet-card">
+        <div class="facet-num">Facet One</div>
+        <div class="facet-title">Prayer</div>
+        <div class="facet-rule"></div>
+        <div class="facet-body">
+          Everything begins and ends with prayer. Hope-empowered leaders lead from their knees first &mdash; before the board meeting, before the hard conversation, before the vision is cast.
+        </div>
+      </div>
+
+      <!-- 2. LEADERSHIP -->
+      <div class="facet-card">
+        <div class="facet-num">Facet Two</div>
+        <div class="facet-title">Leadership</div>
+        <div class="facet-rule"></div>
+        <div class="facet-body">
+          Hope in Christ changes how you make decisions, hire people, guard culture, and walk into rooms you can&rsquo;t yet see the outcome of. It&rsquo;s how you lead when the numbers haven&rsquo;t caught up to the calling.
+        </div>
+      </div>
+
+      <!-- 3. ENDURANCE -->
+      <div class="facet-card">
+        <div class="facet-num">Facet Three</div>
+        <div class="facet-title">Endurance</div>
+        <div class="facet-rule"></div>
+        <div class="facet-body">
+          Hope is what sustains a mission through change, pressure, and leadership transitions. It&rsquo;s how a faith-grounded organization lasts &mdash; how it resists drift and hands off the flame without dropping it.
+        </div>
+      </div>
+
+      <!-- 4. PERSONAL LIFE -->
+      <div class="facet-card">
+        <div class="facet-num">Facet Four</div>
+        <div class="facet-title">Personal Life</div>
+        <div class="facet-rule"></div>
+        <div class="facet-body">
+          Hope isn&rsquo;t just how you lead at work &mdash; it&rsquo;s how you live, love your family, steward your time, and keep your own soul from drifting. Who you are at home is who you are in the room.
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CLOSING THREAD -->
+    <div class="closing-block">
+      <div class="closing-label">The Thread</div>
+      <div class="closing-body">
+        Hope is the topic. Prayer, leadership, endurance, and personal life are how hope shows up &mdash; in the boardroom, in the hallway, in the long game, and in the quiet places no one sees.
+      </div>
+      <div class="closing-rule"></div>
+      <div style="font-size:12px; letter-spacing:2px; text-transform:uppercase; color:rgba(255,255,255,0.5);">Hope-Empowered Leadership</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════════ WHERE WE'RE AT / NEXT STEPS ═══════════════ -->
+<div class="page">
+  <div class="page-inner" style="padding-top: 0;">
+
+    <div class="section-heading">Where We&rsquo;re At</div>
+    <div class="section-subtitle">A quick recap from our April 20 workshop &mdash; and what comes next.</div>
+
+    <div class="status-grid">
+
+      <!-- WHERE WE LANDED -->
+      <div class="status-card status-card-gold">
+        <div style="font-size:11px; font-weight:700; letter-spacing:2.5px; text-transform:uppercase; color:var(--gold); margin-bottom:14px;">What we settled</div>
+        <ul style="list-style:none; padding:0;">
+          <li style="padding:6px 0 6px 18px; position:relative; font-size:14.5px; line-height:1.6;">
+            <span style="position:absolute; left:0; color:var(--gold); font-weight:700;">&bull;</span>
+            The umbrella: <strong>Hope-Empowered Leadership</strong>.
+          </li>
+          <li style="padding:6px 0 6px 18px; position:relative; font-size:14.5px; line-height:1.6;">
+            <span style="position:absolute; left:0; color:var(--gold); font-weight:700;">&bull;</span>
+            Four starting facets: <em>Prayer, Leadership, Endurance, Personal life.</em>
+          </li>
+          <li style="padding:6px 0 6px 18px; position:relative; font-size:14.5px; line-height:1.6;">
+            <span style="position:absolute; left:0; color:var(--gold); font-weight:700;">&bull;</span>
+            Audience: Christian leaders in all walks of life.
+          </li>
+          <li style="padding:6px 0 6px 18px; position:relative; font-size:14.5px; line-height:1.6;">
+            <span style="position:absolute; left:0; color:var(--gold); font-weight:700;">&bull;</span>
+            Format: Scripture-grounded, story-illustrated.
+          </li>
+        </ul>
+      </div>
+
+      <!-- WORKFLOW -->
+      <div class="status-card status-card-purple">
+        <div style="font-size:11px; font-weight:700; letter-spacing:2.5px; text-transform:uppercase; color:var(--purple); margin-bottom:14px;">What&rsquo;s Next</div>
+        <ul style="list-style:none; padding:0;">
+          <li style="padding:6px 0 6px 22px; position:relative; font-size:14.5px; line-height:1.6;">
+            <span style="position:absolute; left:0; color:var(--purple); font-weight:700;">1.</span>
+            <strong>Speech first, chapter second.</strong> You write a speech for each facet at home.
+          </li>
+          <li style="list-style:none; margin:8px 0 8px 22px; padding:12px 16px; background:rgba(35,33,175,0.05); border-left:2px solid var(--purple); border-radius:0 4px 4px 0; font-size:13.5px; line-height:1.6; font-style:italic; color:var(--text);">
+            Each speech/chapter should include a <strong style="font-style:normal;">scripture anchor</strong>, a <strong style="font-style:normal;">personal or external story</strong> that illustrates it (good example, warning example, or funny example!), and a <strong style="font-style:normal;">clear takeaway</strong>.
+          </li>
+          <li style="padding:6px 0 6px 22px; position:relative; font-size:14.5px; line-height:1.6;">
+            <span style="position:absolute; left:0; color:var(--purple); font-weight:700;">2.</span>
+            Carol helps pull stories and content from her binder.
+          </li>
+          <li style="padding:6px 0 6px 22px; position:relative; font-size:14.5px; line-height:1.6;">
+            <span style="position:absolute; left:0; color:var(--purple); font-weight:700;">3.</span>
+            You pass the finished speech to me.
+          </li>
+          <li style="padding:6px 0 6px 22px; position:relative; font-size:14.5px; line-height:1.6;">
+            <span style="position:absolute; left:0; color:var(--purple); font-weight:700;">4.</span>
+            I shape it into a chapter outline for the book we can build on.
+          </li>
+          <li style="padding:6px 0 6px 22px; position:relative; font-size:14.5px; line-height:1.6;">
+            <span style="position:absolute; left:0; color:var(--purple); font-weight:700;">5.</span>
+            Repeat for the other three facets &mdash; and add any that emerge.
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-meta" style="padding-top:16px;">
+      Storyline Creative <span class="gold-dot">&bull;</span> Albert Gray Book Project <span class="gold-dot">&bull;</span> April 2026
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
