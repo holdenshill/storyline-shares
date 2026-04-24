@@ -31,6 +31,7 @@
     background: var(--cream);
     line-height: 1.6;
     font-size: 15px;
+    margin: 0;
   }
 
   .page {
@@ -64,6 +65,9 @@
     padding: 0;
     position: relative;
     overflow: hidden;
+    max-width: none;
+    width: 100%;
+    margin: 0;
   }
   .cover::before {
     content: '';
@@ -167,30 +171,24 @@
     padding: 20px 28px;
     margin-bottom: 16px;
     position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }
   .question-card .q-number {
     font-family: 'Playfair Display', serif;
     font-weight: 900;
     font-size: 28px;
     color: var(--gold);
-    position: absolute;
-    left: 28px;
-    top: 16px;
     opacity: 0.25;
-  }
-  .question-card .q-label {
-    font-weight: 800;
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: var(--gold);
-    margin-bottom: 6px;
-    padding-left: 40px;
+    flex-shrink: 0;
+    line-height: 1;
+    min-width: 40px;
   }
   .question-card .q-text {
     font-size: 15px;
     line-height: 1.6;
-    padding-left: 40px;
+    flex: 1;
   }
 
   /* ── NOTE BOX ── */
